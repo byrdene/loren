@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    image_path: modules/custom/custom_paragraphs/images/paragraphs-type-basic-text.png
+id: text_block
+label: 'Rich Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,4 +1,4 @@
-uuid: 3c06a1d3-587f-449d-b53d-66022282ecd1
+uuid: 32407835-d636-4161-8342-d5e787a325eb
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - image.style.4x3_small
     - image.style.4x3_x_large
     - image.style.4x3_x_small
+_core:
+  default_config_hash: toNV6iGHKzQbYVTD6zzDbg2rAhVgLTlb77DLuKa1NGQ
 id: landscape_full_width_4x3
 label: 'Landscape - Full width (4x3)'
 image_style_mappings:

@@ -39,14 +39,17 @@ It may also be necessary to add any host-specific settings to `sites/default/set
     * `git push --set-upstream origin master`
 9. Run the Drupal installer, ideally from the remote server to create any database tables necessary to the host.
 10. First importing a copy of the remote database into the local database, 
-    * export the shared configuration (`drush cim`)
+    * export the shared configuration (`drush cex`)
     * import the local config split settings: `drush cim`  
-11. Set up the project's custom theme (the rename utility is required and can be downloaded with homebrew: `brew install rename`):
+11. Bring in any relevant custom modules (paragraphs, content types, etc), and enable
+    * In the UI, set up workflows for the desired content types (most likely all)
+    * Export and commit the updated config: `drush cex`
+12. Set up the project's custom theme (the rename utility is required and can be downloaded with homebrew: `brew install rename`):
     * From the root directory, run `scripts/custom-theme.sh zaldomoh NEWNAME`
     * Enable the new theme in the UI
     * cd into the the custom theme directory
     * Run `npm install` to set up gulp and generate starting dist/ files
-    * Export the updated config: `drush cex`
+    * Export and commit the updated config: `drush cex`
       
 ## Updating Drupal Core
 

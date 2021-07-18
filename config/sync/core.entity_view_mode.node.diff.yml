@@ -1,4 +1,4 @@
-uuid: f7dd6b5d-f168-40f5-aaf1-adffffbdca93
+uuid: 42435944-bdb9-4902-a7f9-664309866490
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: pqZNtad5J9THcdbYjwPD4qINqvrTxnOd8KCWn6tUBRs
+  default_config_hash: rwHa5SzsLYKZu_czJuibd03MSNwIOLCnX1NTiuehytI
 id: node.diff
 label: 'Revision comparison'
 targetEntityType: node

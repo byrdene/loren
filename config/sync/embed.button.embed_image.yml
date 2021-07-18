@@ -1,4 +1,4 @@
-uuid: 39ab38e3-ec8a-4ead-8efe-ea41f0d302db
+uuid: 2427dc75-1401-45f8-94b9-66dc84d19812
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   module:
     - entity_embed
     - media
+_core:
+  default_config_hash: ij8pVSsqC7qTaI6X9Gc2mAWoZTW951dPqHALS-8Ssns
 label: 'Embed Image'
 id: embed_image
 type_id: entity

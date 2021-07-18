@@ -1,0 +1,29 @@
+uuid: d5865e9a-723f-4604-83ce-29cc89d9b1e8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c_cvKZ5ijTYcbOmGwEWPw1zcn5TA7nzdMg75sZF5ajw
+id: content
+label: Content
+groups:
+  component_library:
+    label: 'Component Library'
+    id: component_library
+    weight: 0
+map:
+  accordions: component_library
+  video: component_library
+  tabs: component_library
+  text_block: component_library
+  two_columns_image_text: component_library
+  image_text: component_library
+  full_width_image: component_library
+  gallery_slider: component_library
+  quote: component_library
+  collapsed_content: component_library
+  gallery_carousel: component_library
+  callout_text: component_library
+  card_deck: component_library
+  video_text: component_library
+  call_to_action: component_library

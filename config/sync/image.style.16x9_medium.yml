@@ -1,9 +1,11 @@
-uuid: ec18215b-c6f7-4322-bbee-1905a9e6c70a
+uuid: 6f5596eb-c36e-4893-aae0-1a9cc1b9c4d1
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: GtBQ7-9qQa2hPc2T-fbGYoh3y7ZmStX-6jP-HV57QD4
 name: 16x9_medium
 label: '16:9 Medium (960x540)'
 effects:

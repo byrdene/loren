@@ -29,8 +29,8 @@ lazysizes:
   ricTimeout: 0
   throttleDelay: 125
   plugins: {  }
-_core:
-  default_config_hash: K8gdrkKx2eUlGDP3SQrWXGo66DDd5vUhOmwT3lY0mPs
 image_fields: {  }
 alter_tag: {  }
 formatters: {  }
+_core:
+  default_config_hash: 7dr9Wxtr_LK-lvbJhaO9HyXQQPiTcLCpSzlpRWz6XiM

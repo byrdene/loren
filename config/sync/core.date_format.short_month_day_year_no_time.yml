@@ -1,7 +1,9 @@
-uuid: fd497c2f-1238-4c2e-a401-c1279eccbcd8
+uuid: a9295df3-e0b1-4389-9ce6-dc03974c9c95
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: Md6jyum9K913RpI0GVdVdxeHIc7wce16Uf2V3gfcNyI
 id: short_month_day_year_no_time
 label: 'Short Month, Day, Year - no time'
 locked: false

@@ -1,7 +1,9 @@
-uuid: 39b9e29a-610a-4e77-9cb5-bd5dcd97c609
+uuid: 495b2dc3-02c0-42f3-a9d7-d96198a33a88
 langcode: en
 status: false
 dependencies: {  }
+_core:
+  default_config_hash: TDpDvHRK2rqca6u_CZMEL-A0Mcb_geRbpgC4CartstI
 id: local
 label: Local
 description: ''

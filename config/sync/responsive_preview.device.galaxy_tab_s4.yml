@@ -1,9 +1,9 @@
-uuid: bff784a6-3c20-4e61-80b2-12cdaa9272b9
+uuid: f8224e73-4577-4241-a6b1-daecc0f9ead5
 langcode: en
 status: 0
 dependencies: {  }
 _core:
-  default_config_hash: VdODXUFAMPMJlo-h17YecFvT5gKNJ_LkBobVlC-zSr4
+  default_config_hash: Dw4n_TE0vREpMfy3X9grATY-zWKXE33d_ZLVSSDuMd0
 id: galaxy_tab_s4
 label: 'Galaxy Tab S4'
 weight: -4

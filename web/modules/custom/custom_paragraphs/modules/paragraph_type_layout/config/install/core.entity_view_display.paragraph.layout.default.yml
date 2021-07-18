@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_layout_bgcolor
+    - paragraphs.paragraphs_type.layout
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content: {  }
+hidden:
+  field_layout_bgcolor: true
+  search_api_excerpt: true

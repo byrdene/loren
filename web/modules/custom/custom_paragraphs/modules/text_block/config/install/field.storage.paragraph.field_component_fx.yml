@@ -1,0 +1,30 @@
+uuid: ad83fca9-1d3e-48a5-ba1d-8db0195ded3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_component_fx
+field_name: field_component_fx
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: component_fx_01
+      label: None
+    -
+      value: component_fx_02
+      label: 'Fade In'
+    -
+      value: component_fx_03
+      label: 'Slide Up'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

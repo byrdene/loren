@@ -1,9 +1,11 @@
-uuid: 90ce8906-d04a-41c1-becb-7402cc454ad8
+uuid: 87864ff4-ef93-4e11-959f-0737b6afdf7f
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: H6dQvCFw53LVWUyt-iimAbUGX0JswdkL9zaxzlYdAV0
 name: 4x3_medium
 label: '4:3 Medium (768x576)'
 effects:

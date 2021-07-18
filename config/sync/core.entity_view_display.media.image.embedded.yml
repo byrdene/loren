@@ -1,4 +1,4 @@
-uuid: 813f0d46-7520-430c-ab08-5aaf352349e1
+uuid: 44aa6ab6-4331-471f-ac1e-9103d71cc55b
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
   module:
     - lazy
     - responsive_image
+_core:
+  default_config_hash: 928An9KaFM_2Ry66sl01o1MqsORxu3jbyrsLljgGKK8
 id: media.image.embedded
 targetEntityType: media
 bundle: image

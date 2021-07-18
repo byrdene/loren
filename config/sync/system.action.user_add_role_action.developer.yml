@@ -1,4 +1,4 @@
-uuid: 88221eee-8604-48c0-b4aa-29303b6348a6
+uuid: fef5492b-f521-400d-ac59-002550bfbd2c
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - user.role.developer
   module:
     - user
+_core:
+  default_config_hash: NcnHkaFGVNIEsoNuhvvZTaYPyLb3BkVwsKViNnykFEs
 id: user_add_role_action.developer
 label: 'Add the Developer role to the selected user(s)'
 type: user

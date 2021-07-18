@@ -1,10 +1,12 @@
-uuid: 3774fe2e-a817-4b7d-8bfb-904cdbac168f
+uuid: 1666b361-5404-4adf-b0b5-e3f7551c960b
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - media
+_core:
+  default_config_hash: z5mgbn1PIVZ5TNMByBmivqo_u3Rdk58UIzpyN4ypTeM
 id: media.field_media_video_file
 field_name: field_media_video_file
 entity_type: media

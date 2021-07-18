@@ -1,7 +1,9 @@
-uuid: 5bb0bafe-ca04-44c3-98e7-617105901a8c
+uuid: b7ffc254-4056-4538-a9ef-0ab156f90a38
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: KHH_GJkbxGIhydwHEiR2PDwxaXZFs_4dTPoZSJ3e7aM
 name: scaled_original_wide
 label: 'Scaled original (wide)'
 effects:

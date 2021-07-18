@@ -1,13 +1,14 @@
-uuid: 00567a8b-e4fd-4c1a-90c4-a41f6bf53580
+uuid: 2136ae53-a7f4-48ee-b170-a7d33cf316ef
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+  default_config_hash: V_AqOIgcX5DMOy1ENrfxtXeEtfIZ15Bn7vRW8g4EhJw
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'search content'
   - 'view media'

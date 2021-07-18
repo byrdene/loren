@@ -1,0 +1,35 @@
+uuid: 89f40cfb-300b-4cc8-be2d-c30c8a0ee84a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 7pPKcBDdF9jd1rBv5TgmsDUNuwcPtiPDRHsUwS2NdlU
+id: paragraph.field_component_width
+field_name: field_component_width
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: small_width
+      label: Small
+    -
+      value: medium_width
+      label: Medium
+    -
+      value: wide_width
+      label: Wide
+    -
+      value: full_width
+      label: 'Full Width'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

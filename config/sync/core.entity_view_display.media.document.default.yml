@@ -1,4 +1,4 @@
-uuid: c5df1707-1a06-4470-ab15-d7981233a51f
+uuid: 2dbb7a2d-2e1c-4010-bdfb-f2c7e34ce34b
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - media.type.document
   module:
     - file
+_core:
+  default_config_hash: EHjdpvGvCsCW2snxykq08OaxkGkbZhVDhBDz6oplWxw
 id: media.document.default
 targetEntityType: media
 bundle: document

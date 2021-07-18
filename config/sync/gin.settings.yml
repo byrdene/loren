@@ -1,16 +1,14 @@
 preset_accent_color: blue
-preset_focus_color: gin
+preset_focus_color: claro
 enable_darkmode: false
 classic_toolbar: classic
 icon_default: true
 icon_path: ''
 high_contrast_mode: false
-show_user_theme_settings: false
+show_user_theme_settings: true
 third_party_settings:
   shortcut:
     module_link: true
-_core:
-  default_config_hash: QdiqmcH9tjpstXqCQKv4G4rHYE4HjWLFkVzyqooqEWM
 features:
   node_user_picture: false
   comment_user_picture: true
@@ -21,3 +19,5 @@ favicon:
 accent_color: ''
 focus_color: ''
 icon_upload: ''
+_core:
+  default_config_hash: s2xJdy-5lUDUvkyKnzq6HCMbP4NayUlbvjijMqnsIbk

@@ -1,8 +1,9 @@
-uuid: fc2338b4-0040-4493-bb7f-fb874b4ee3de
+uuid: aa7bebcf-7426-4f0e-9949-3a17d00b5d05
 langcode: en
 status: true
 dependencies:
   module:
+    - role_delegation
     - user
 _core:
   default_config_hash: J5EbGNdz0YUaSIYKwomyFSOtZjsV9TrBA3qdb3ZwBS0

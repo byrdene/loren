@@ -1,0 +1,10 @@
+name: 'Paragraph Type: Layout'
+description: 'Paragraph Type: Layout'
+type: module
+core_version_requirement: '^8.9 || ^9'
+package: Custom
+dependencies:
+  - field
+  - layout_paragraphs
+  - options
+  - paragraphs

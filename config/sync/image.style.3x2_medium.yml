@@ -1,9 +1,11 @@
-uuid: 7df58b1d-8547-4b9d-bb05-7b362f4f5a92
+uuid: 1b397704-ea36-4068-be0e-9e217f1924ab
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: uhpk5nCP-KrKAUopC0NmAUicEofvYGoaQNimt9658cM
 name: 3x2_medium
 label: '3:2 Medium (1080 x 720)'
 effects:

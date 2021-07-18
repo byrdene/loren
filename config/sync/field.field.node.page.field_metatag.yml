@@ -1,0 +1,23 @@
+uuid: 9939da5e-7319-4d1f-9bb4-edab1b0bfbb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.page
+  module:
+    - metatag
+_core:
+  default_config_hash: _5gP2L9-zeO0yYMnJPRRkcRVT7J75191QhsYRBrnakk
+id: node.page.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: page
+label: 'Search engine optimization'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

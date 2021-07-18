@@ -1,4 +1,4 @@
-uuid: 356d8ce4-4ec3-455d-aa2d-3f4ff1ab3707
+uuid: 42db5206-07a2-427f-aa04-b5f4db78bfa8
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
   module:
     - lazy
     - responsive_image
+_core:
+  default_config_hash: ImMFB0QsND1CkAXzlyrExnNB0RrC2hx6SBhxkbNYWfg
 id: media.image.portrait_3x4
 targetEntityType: media
 bundle: image

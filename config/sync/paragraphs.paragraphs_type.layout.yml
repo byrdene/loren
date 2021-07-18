@@ -1,0 +1,20 @@
+uuid: 45962432-52e0-4bc5-95c8-2f144d0dca67
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: syYY-EfCJBH9iF84A-7PkBubGk1yd9i-A-KgAb8-478
+id: layout
+label: Layout
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecolumn: 'One Column Layout'
+      layout_threecolumn: 'Three Column Layout'
+      layout_twocolumn: 'Two Column Layout'

@@ -1,9 +1,11 @@
-uuid: 1a127226-9969-44f7-845b-36feda39e92d
+uuid: 94915f39-16de-4542-ba90-1e783969087d
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: YV6ktGb0bGX1WnkTxvmakVriDJbUMtvEW20qyry9oGA
 name: 1x1_small
 label: '1:1 Small (480 x 480)'
 effects:

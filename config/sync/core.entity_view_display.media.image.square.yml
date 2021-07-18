@@ -1,4 +1,4 @@
-uuid: ed5fffef-58ac-4597-95d7-bf290060e5b9
+uuid: 0b458573-dbf0-4f41-aa44-5d5abbb17476
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
   module:
     - lazy
     - responsive_image
+_core:
+  default_config_hash: h-0KSBQmtCQegVR7mQpZGql4--oXZHsBjSoVz-eW8q0
 id: media.image.square
 targetEntityType: media
 bundle: image

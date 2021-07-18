@@ -1,0 +1,17 @@
+uuid: 12737a3c-1192-4bbc-a587-cff6e1e58aac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_layout_bgcolor
+    - paragraphs.paragraphs_type.layout
+_core:
+  default_config_hash: ZfMGRNOpSdCxZyUDzzgber2u90UB3MgsQBiK6ioAsdk
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content: {  }
+hidden:
+  field_layout_bgcolor: true
+  search_api_excerpt: true

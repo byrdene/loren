@@ -1,7 +1,9 @@
-uuid: 1a56c427-5ca0-4bbe-9982-f39c2378ce1e
+uuid: cf942a99-abb8-426b-b010-09b44d03861a
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: o43CpkAK9gF7BaMDiRwYHXTDg5_ZQm7BvcMEe2NxUow
 name: scaled_original_mobile
 label: 'Scaled original (mobile)'
 effects:

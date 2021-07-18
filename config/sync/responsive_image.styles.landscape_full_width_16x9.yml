@@ -1,4 +1,4 @@
-uuid: 30e1cd00-7cd0-447b-af4a-29238e2f9800
+uuid: 1b52fcd0-23e6-4d95-bdb5-370f4e6cc0b4
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - image.style.16x9_small
     - image.style.16x9_x_large
     - image.style.16x9_x_small
+_core:
+  default_config_hash: bnFMzCeq76MCfGm7m1uXjRLIe7kyD_p5bvdA1H2KcXs
 id: landscape_full_width_16x9
 label: 'Landscape - Full width (16x9)'
 image_style_mappings:

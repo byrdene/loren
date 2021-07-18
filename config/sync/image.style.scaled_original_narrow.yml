@@ -1,7 +1,9 @@
-uuid: a6156890-dc25-4283-812a-fce4ffa088e8
+uuid: 2c316480-8ddc-4c78-ae44-62406a40c4bf
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: QET_d3QzwIkQeTw8kogoIQAZ-lTAKLjm15CZs4vWJKs
 name: scaled_original_narrow
 label: 'Scaled original (narrow)'
 effects:

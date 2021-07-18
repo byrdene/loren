@@ -1,10 +1,12 @@
-uuid: 247351fd-e158-42ac-b7fe-98573e9b57ba
+uuid: 57201667-767c-4735-9a27-ad8c3c16b597
 langcode: en
 status: true
 dependencies:
   config:
     - image.style.2x3_small
     - image.style.2x3_x_small
+_core:
+  default_config_hash: QTGanZMKjrn6k7nmMmRsccyaxPNjWropXUQehcqGlbU
 id: portrait_2x3
 label: 'Portrait (2x3)'
 image_style_mappings:

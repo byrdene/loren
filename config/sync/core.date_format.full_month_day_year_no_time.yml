@@ -1,7 +1,9 @@
-uuid: 95e61f45-2105-4d52-bd91-8eb3473b4948
+uuid: ad5651cd-865e-4a02-998e-d767b5437759
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: svz_VS354pwYF8fcnSf-KryA0QHcEdsSUaSOxO4jXj8
 id: full_month_day_year_no_time
 label: 'Full Month, Day, Year - no time'
 locked: false

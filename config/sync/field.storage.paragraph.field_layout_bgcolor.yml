@@ -1,0 +1,44 @@
+uuid: 26bc5b0e-7afe-4dd9-83f7-4ae6f75bda20
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: qy1YFWYekGlcR_ysv6kyj4rE--XLs8mcIY1RAZTYuBY
+id: paragraph.field_layout_bgcolor
+field_name: field_layout_bgcolor
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: transparent
+      label: Transparent
+    -
+      value: layout_bgcolor_01
+      label: 'Primary Color'
+    -
+      value: layout_bgcolor_02
+      label: 'Accent Color'
+    -
+      value: layout_bgcolor_03
+      label: 'Light Gray'
+    -
+      value: layout_bgcolor_04
+      label: 'Dark Gray'
+    -
+      value: layout_bgcolor_05
+      label: Black
+    -
+      value: layout_bgcolor_06
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

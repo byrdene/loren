@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * Implements hook_plugin_filter_TYPE__CONSUMER_alter().
+ *
+ * Remove all core layouts, leaving only the layouts we define in this module
+ */
+//function custom_layouts_plugin_filter_layout__layout_builder_alter(array &$definitions): void {
+//  // Remove all non-demo layouts from Layout Builder.
+//  foreach ($definitions as $id => $definition) {
+//    if (!preg_match('/^custom_layouts__/', $id)) {
+//      unset($definitions[$id]);
+//    }
+//  }
+//}

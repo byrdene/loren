@@ -1,9 +1,9 @@
-uuid: cd0a9c6b-8249-49d4-b4ef-de2cde8585d7
+uuid: 65159e64-79e2-4adf-b923-9b8f2b2ff494
 langcode: en
 status: 1
 dependencies: {  }
 _core:
-  default_config_hash: uyYADVesD0TjBmqR-Tn9u_R8Psav2Bl5KprLSawl6lI
+  default_config_hash: H1GWlOkgT5tqE4ugYTwd5A4UHWqFiGVgF9a9agGigFs
 id: medium
 label: Tablet
 weight: -9

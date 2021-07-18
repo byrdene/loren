@@ -1,7 +1,9 @@
-uuid: 4c45e2b8-33e0-489f-b144-646d5719697e
+uuid: 08dcb1ea-2c3d-4c92-9c0e-7b5cfa9b6f6b
 langcode: en
 status: false
 dependencies: {  }
+_core:
+  default_config_hash: irQk3JbkXUFKj5CFNmSSeO0EJ4ea_8YubNUjVaITogI
 id: live
 label: Live
 description: 'This is the Live or Prod environment.'

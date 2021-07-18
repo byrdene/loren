@@ -1,9 +1,11 @@
-uuid: 657c1068-fbf8-47c8-898f-e0efefe11f45
+uuid: aded9dc9-42c9-48aa-8436-17dbd52d5fe5
 langcode: en
 status: true
 dependencies:
   module:
     - path_alias
+_core:
+  default_config_hash: GiQY8TcbkMat1Lpyz5z9WMUYl6KWQ46XSdW-b5GOKrQ
 id: path_alias.token
 label: Token
 targetEntityType: path_alias

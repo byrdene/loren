@@ -1,4 +1,4 @@
-uuid: 0e05f704-79b9-4445-8dab-4171238db49d
+uuid: b63bb2d8-b2aa-4139-831b-56f0f903111f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - image.style.1x1_medium
     - image.style.1x1_small
     - image.style.1x1_x_small
+_core:
+  default_config_hash: V-dLFmqiL0ukdPVBZNRZEoqsyyO9BUu7a2Oaq6J_5Bc
 id: square
 label: Square
 image_style_mappings:

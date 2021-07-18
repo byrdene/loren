@@ -1,0 +1,38 @@
+uuid: cd74a9e3-d468-41c6-835d-9195cf185b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.banner
+    - field.field.node.page.body
+    - field.field.node.page.field_layouts
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_related_view
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: eo6p-YoWgrWWx6GJDAty_z9CCCZ1cFeAdHzm4kRw_nc
+id: node.page.banner
+targetEntityType: node
+bundle: page
+mode: banner
+content:
+  field_main_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: contained_landscape
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_layouts: true
+  field_metatag: true
+  field_related_view: true
+  links: true
+  search_api_excerpt: true

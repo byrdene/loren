@@ -1,9 +1,11 @@
-uuid: 2d70646d-ffdc-4498-87f7-37172c1c7509
+uuid: 428b3224-9486-477a-a270-59141bbf4e8f
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: JgT08NahBZCaQgztaF24Xmo-y-fYmSsbU3Bc8PtFmvM
 id: media.landscape_contained_3x2
 label: 'Landscape - Contained (3x2)'
 targetEntityType: media

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.page.body
+    - field.field.node.page.field_layouts
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_related_view
+    - node.type.page
+  module:
+    - user
+id: node.page.search_result
+targetEntityType: node
+bundle: page
+mode: search_result
+content:
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_layouts: true
+  field_main_image: true
+  field_metatag: true
+  field_related_view: true
+  links: true

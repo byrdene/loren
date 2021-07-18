@@ -1,0 +1,21 @@
+uuid: a9045dab-a7f8-460d-8eb9-730b7d8102fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    image_path: themes/custom/tofu_admin/images/paragraphs-type-basic-text.png
+_core:
+  default_config_hash: F7T_cg6EkyM6aCCsUGP6fET8EtE8QPigPHpAwQtHt6w
+id: text_block
+label: 'Rich Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

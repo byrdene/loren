@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_width
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - options
+id: paragraph.text_block.field_component_width
+field_name: field_component_width
+entity_type: paragraph
+bundle: text_block
+label: Width
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: small_width
+default_value_callback: ''
+settings: {  }
+field_type: list_string

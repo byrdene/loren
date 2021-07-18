@@ -1,4 +1,4 @@
-uuid: 7999a3bb-0d0a-4baa-a2ea-9da7e3e3f638
+uuid: 29397025-8807-4e55-a984-691ed6f3652b
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - image.style.16x9_medium
     - image.style.16x9_small
     - image.style.16x9_x_small
+_core:
+  default_config_hash: 2MIbjgBlPZC20-qAH_mxJ8Jhmj2XMqRZgJMvrJFMKhs
 id: landscape_contained_16x9
 label: 'Landscape - Contained (16x9)'
 image_style_mappings:

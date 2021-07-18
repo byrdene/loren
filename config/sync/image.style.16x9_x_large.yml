@@ -1,9 +1,11 @@
-uuid: 4bd66be9-2093-4f1d-b3f1-599f35abfa62
+uuid: 980f4bdc-f3f5-4311-97f0-100ab2d7096c
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: W8tVmQ1v9TEsf1-Bka7EBMQQbQfKRx4mG4fDZ_DwCkM
 name: 16x9_x_large
 label: '16:9 X-Large (1920 x 1080)'
 effects:

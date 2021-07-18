@@ -1,0 +1,49 @@
+uuid: 625c8281-38d9-41cf-89fc-1e7176811b60
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.page.body
+    - field.field.node.page.field_layouts
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_related_view
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - user
+    - viewfield
+_core:
+  default_config_hash: Y0dL4lKg_t7En19gcGIckmz-czgrNE4M5x13ufWjavo
+id: node.page.search_index
+targetEntityType: node
+bundle: page
+mode: search_index
+content:
+  field_layouts:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_related_view:
+    type: viewfield_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_main_image: true
+  field_metatag: true
+  links: true
+  search_api_excerpt: true

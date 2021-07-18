@@ -1,0 +1,24 @@
+excluded:
+  - embed.button.embed_image
+  - entity_browser.browser.media_entity_browser_image
+  - entity_browser.browser.media_entity_browser_image_embed
+  - core.entity_form_display.media.image.default
+  - core.entity_form_display.media.image.media_library
+  - core.entity_view_display.media.image.default
+  - core.entity_view_display.media.image.media_library
+  - media.type.image
+  - paragraphs.paragraphs_type.accordions
+  - paragraphs.paragraphs_type.callout_text
+  - paragraphs.paragraphs_type.call_to_action
+  - paragraphs.paragraphs_type.card_deck
+  - paragraphs.paragraphs_type.collapsed_content
+  - paragraphs.paragraphs_type.full_width_image
+  - paragraphs.paragraphs_type.gallery_carousel
+  - paragraphs.paragraphs_type.gallery_slider
+  - paragraphs.paragraphs_type.quote
+  - paragraphs.paragraphs_type.tabs
+  - paragraphs.paragraphs_type.video
+  - paragraphs.paragraphs_type.video_text
+  - views.view.media_browser_image
+  - core.entity_view_mode.node.banner
+required: true

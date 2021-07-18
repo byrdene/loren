@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.text_block
+id: paragraph.text_block.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: text_block
+label: Heading
+description: 'The component''s <strong>Heading</strong> can display on the page or just be used for editorial reference if you check the "Don''t show heading on page" checkbox below.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

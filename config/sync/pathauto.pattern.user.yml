@@ -1,9 +1,11 @@
-uuid: 15fdb4fd-5e78-4098-a27b-70885b623af5
+uuid: 58d40eef-3ba8-44ea-873f-83d971370846
 langcode: en
 status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: Ygya0-gQMZLatu7-1-5oIXEj08DRbqHZBD5X_S19W5Y
 id: user
 label: User
 type: 'canonical_entities:user'

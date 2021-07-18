@@ -1,9 +1,11 @@
-uuid: 8574082d-5286-40b4-9520-088dc1f3be93
+uuid: 95bdf07a-b627-44ad-8429-ab816df4ee80
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: r5UzhciCJHwAA2jfUBl8TIFKjPQ99RSSNyq0PFPnjjc
 id: node.featured
 label: Featured
 targetEntityType: node

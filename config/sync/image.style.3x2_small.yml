@@ -1,9 +1,11 @@
-uuid: 431c320c-e116-49cd-804a-56e0716e3c11
+uuid: c566207b-018b-483c-82b9-fb267eed446a
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: q1WKaX3wdG_-sCW-yoYnNHnaYwM2NMwpigUT03fgMu8
 name: 3x2_small
 label: '3:2 Small (810 x 540)'
 effects:

@@ -1,9 +1,11 @@
-uuid: e9eabe15-3810-4fed-877f-7b3acf6391c3
+uuid: 66034c3b-6fff-4781-bc16-830285ff618f
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: R-Leiqve7aQzhd3oxBY-Yt8Q_UvoIp5LHzNMe1Ih_PY
 id: basic_page
 label: 'Basic Page'
 type: 'canonical_entities:node'

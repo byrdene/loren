@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layouts
+    - node.type.page
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - entity_reference_revisions
+id: node.page.field_layouts
+field_name: field_layouts
+entity_type: node
+bundle: page
+label: 'Page Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      layout: layout
+      text_block: text_block
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: -32
+        enabled: false
+      accordions:
+        weight: -37
+        enabled: false
+      call_to_action:
+        weight: -40
+        enabled: false
+      callout_text:
+        weight: -39
+        enabled: false
+      card:
+        weight: -31
+        enabled: false
+      card_deck:
+        weight: -35
+        enabled: false
+      collapsed_content:
+        weight: -41
+        enabled: false
+      full_width_image:
+        weight: -30
+        enabled: false
+      gallery_carousel:
+        weight: -34
+        enabled: false
+      gallery_slider:
+        weight: -33
+        enabled: false
+      image:
+        weight: -43
+        enabled: false
+      image_text:
+        weight: -29
+        enabled: false
+      layout:
+        enabled: true
+        weight: -45
+      quote:
+        weight: -38
+        enabled: false
+      tab_item:
+        weight: -28
+        enabled: false
+      tabs:
+        weight: -36
+        enabled: false
+      text_block:
+        enabled: true
+        weight: -44
+      video:
+        weight: -42
+        enabled: false
+      video_text:
+        weight: -27
+        enabled: false
+field_type: entity_reference_revisions

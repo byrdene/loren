@@ -1,0 +1,25 @@
+uuid: 9a68468b-77c8-4282-8cc9-175c70e627aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_fx
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - options
+_core:
+  default_config_hash: blL92mzMXm4ZgsTljTD5G1sUBn4DjLTWpC194OYHKUU
+id: paragraph.text_block.field_component_fx
+field_name: field_component_fx
+entity_type: paragraph
+bundle: text_block
+label: 'Scrolling FX'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: component_fx_01
+default_value_callback: ''
+settings: {  }
+field_type: list_string

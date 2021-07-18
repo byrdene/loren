@@ -1,9 +1,11 @@
-uuid: 0969298d-164d-4b57-9f91-80079a4cef4a
+uuid: bc22630b-0ebe-4112-829e-bfa88493f5ca
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: xwcgR0zWKTS0lqqf5U_dCUroYbRGV6cJ5rmM6N_xY7Q
 name: 4x3_large
 label: '4:3 Large (1024x768)'
 effects:

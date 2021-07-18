@@ -1,0 +1,117 @@
+uuid: 42393abc-8401-4ccb-852a-2049534d7854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_layouts
+    - field.field.node.page.field_main_image
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_related_view
+    - node.type.page
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - layout_paragraphs
+    - media_library
+    - metatag
+    - path
+    - viewfield
+third_party_settings:
+  field_group:
+    group_banner_:
+      children:
+        - field_main_image
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Banner & Image'
+      region: content
+_core:
+  default_config_hash: 57nkojSarT6CENzAfftsUf5Ucdiuw6j1JI78IrAQ8GE
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_layouts:
+    type: layout_paragraphs
+    weight: 2
+    settings:
+      preview_view_mode: preview
+      nesting_depth: 0
+      require_layouts: 1
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_entity_browser_image
+    type: media_library_widget
+    region: content
+  field_metatag:
+    weight: 5
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_related_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 9
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  promote: true
+  uid: true

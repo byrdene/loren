@@ -1,9 +1,11 @@
-uuid: d5ee82e2-1994-4984-8120-484b266383b4
+uuid: f0148294-89af-4daa-a8bf-c58c16d10d2e
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: K_mZz5-sl5ZjpIcAkAHq3t3yTcG6d8bbKoTmPu6_1hM
 name: 16x9_small
 label: '16:9 Small (640 x 360)'
 effects:

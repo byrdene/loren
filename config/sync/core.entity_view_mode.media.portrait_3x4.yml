@@ -1,9 +1,11 @@
-uuid: 8f43eb64-b448-4ae9-a473-53d5447f9688
+uuid: c360e627-b908-4799-9323-017a5b4e7817
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: OxrD6UxSsWwvvclqHlwmrtFIFNPkTU3_chiaTw28aXU
 id: media.portrait_3x4
 label: 'Portrait (3x4)'
 targetEntityType: media

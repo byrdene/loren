@@ -1,0 +1,7 @@
+custom_paragraphs.settings:
+  path: '/admin/config/custom-paragraphs/style-options'
+  defaults:
+    _form: '\Drupal\custom_paragraphs\Form\CustomParagraphsSettingsForm'
+    _title: 'Custom Paragraph Style Settings'
+  requirements:
+    _permission: 'administer custom paragraph settings'

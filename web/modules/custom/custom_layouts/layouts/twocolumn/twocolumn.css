@@ -1,0 +1,27 @@
+/*
+ * @file
+ * Provides the layout styles for layout_onecol.
+ */
+
+.layout--twocolumn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--twocolumn > .layout__region {
+  flex: 0 1 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .layout--twocolumn > .width--50 {
+    flex: 0 1 50%;
+  }
+
+  .layout--twocolumn > .width--33 {
+    flex: 0 1 33%;
+  }
+
+  .layout--twocolumn > .width--67 {
+    flex: 0 1 67%;
+  }
+}

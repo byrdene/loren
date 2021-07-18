@@ -1,4 +1,4 @@
-uuid: 44dcb8e7-2316-4f76-8624-249b669ce035
+uuid: e8e1eccd-a22d-46e5-9148-d2d3aa20b28d
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
     - lazy
     - linkit
     - media
+_core:
+  default_config_hash: UncuhoP0fSvVW8R0DGXfNpKj3WOzOGhn_mtqv8ZWj30
 name: 'Full HTML'
 format: full_html
 weight: -10
@@ -100,7 +102,7 @@ filters:
     weight: -40
     settings:
       default_view_mode: embedded
-      allowed_media_types:
-        image: image
       allowed_view_modes:
         embedded: embedded
+      allowed_media_types:
+        image: image

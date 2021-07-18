@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: layout
+label: Layout(s)
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecolumn: 'One Column Layout'
+      layout_threecolumn: 'Three Column Layout'
+      layout_twocolumn: 'Two Column Layout'

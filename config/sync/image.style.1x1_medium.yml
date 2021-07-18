@@ -1,9 +1,11 @@
-uuid: b515204d-8b43-4141-a3aa-df0ca630c672
+uuid: a1c399d5-8e44-4798-a6a3-53eb770fbc54
 langcode: en
 status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: ulYzb0B_ZCpIcs679pY31BQxLEXZcjhNNUHci4oIaCw
 name: 1x1_medium
 label: '1:1 Medium (800x800)'
 effects:

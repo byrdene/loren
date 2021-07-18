@@ -1,4 +1,4 @@
-uuid: c321aa84-9d60-4489-9396-a1cb45cbefd4
+uuid: 43f0037a-d0aa-43ba-be2a-d71367191f80
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - file
     - image
     - media
+_core:
+  default_config_hash: 7ZBrcl87ZXaw42v952wwcw_9cQgTBq5_5tgyUkE-VV0
 id: media.field_media_image
 field_name: field_media_image
 entity_type: media

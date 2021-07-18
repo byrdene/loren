@@ -1,4 +1,4 @@
-uuid: 209116cd-fb97-471e-bc6d-6e611aa02b63
+uuid: 26d8d196-6f19-4b25-8d6f-5009a1b3759f
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,8 @@ dependencies:
   module:
     - lazy
     - responsive_image
+_core:
+  default_config_hash: WRvlB_BY849XV0q7gD9-2NudCYIFFStg6PPU776lXtQ
 id: media.image.landscape_full_width_16x9
 targetEntityType: media
 bundle: image

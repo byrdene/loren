@@ -1,0 +1,100 @@
+uuid: 6cda4a85-5e4a-4540-8081-78017872d2ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.text_block.field_component_bgcolor
+    - field.field.paragraph.text_block.field_component_fx
+    - field.field.paragraph.text_block.field_component_width
+    - field.field.paragraph.text_block.field_custom_class
+    - field.field.paragraph.text_block.field_heading
+    - field.field.paragraph.text_block.field_heading_status
+    - field.field.paragraph.text_block.field_text
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - field_group
+    - options
+    - text
+third_party_settings:
+  field_group:
+    group_formatting_options_applied:
+      children:
+        - field_component_width
+        - field_component_bgcolor
+        - field_component_fx
+        - field_custom_class
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Formatting Options Applied'
+_core:
+  default_config_hash: Dr8rhCVRYnzl_USUPZKjBoW-O_xQwV1B_5PMaB9RmpI
+id: paragraph.text_block.preview
+targetEntityType: paragraph
+bundle: text_block
+mode: preview
+content:
+  field_component_bgcolor:
+    type: list_default
+    weight: 7
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_component_fx:
+    type: list_default
+    weight: 8
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_component_width:
+    type: list_default
+    weight: 6
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_custom_class:
+    type: string
+    weight: 9
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_heading_status:
+    type: boolean
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      format: custom
+      format_custom_true: 'Admin display only'
+      format_custom_false: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

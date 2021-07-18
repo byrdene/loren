@@ -1,0 +1,14 @@
+name: 'Paragraph Component: Rich Text'
+type: module
+description: 'Rich Text paragraph type.'
+core_version_requirement: '^8.9 || ^9'
+package: Custom
+dependencies:
+  - allowed_formats
+  - field
+  - field_group
+  - layout_paragraphs
+  - options
+  - paragraphs
+  - paragraphs_browser
+  - text

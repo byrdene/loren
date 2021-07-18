@@ -1,10 +1,12 @@
-uuid: 4d8d2df5-0b02-4bdf-9c95-240f424de896
+uuid: aa7a5766-bb5d-44fd-aa97-cb90f8377831
 langcode: en
 status: true
 dependencies:
   config:
     - image.style.3x4_small
     - image.style.3x4_x_small
+_core:
+  default_config_hash: 1R85o0sdK_Q0orKUJKq3hEXqgRnX-smPqZ9DK3PU4-s
 id: portrait_3x4
 label: 'Portrait (3x4)'
 image_style_mappings:

@@ -1,0 +1,6 @@
+layout_bgcolor: "transparent|Transparent\r\nlayout_bgcolor_01|Primary Color\r\nlayout_bgcolor_02|Accent Color\r\nlayout_bgcolor_03|Light Gray\r\nlayout_bgcolor_04|Dark Gray\r\nlayout_bgcolor_05|Black\r\nlayout_bgcolor_06|White"
+component_bgcolor: "transparent|Transparent\r\ncomponent_bgcolor_01|Primary Color\r\ncomponent_bgcolor_02|Accent Color\r\ncomponent_bgcolor_03|Light Gray\r\ncomponent_bgcolor_04|Dark Gray\r\ncomponent_bgcolor_05|Black\r\ncomponent_bgcolor_06|White"
+layout_width: "wide_width|Page Width\r\nbrowser_width|Full Width"
+component_width: "small_width|Small\r\nmedium_width|Medium\r\nwide_width|Wide\r\nfull_width|Full Width"
+layout_fx: "layout_fx_01|None\r\nlayout_fx_02|Fade In\r\nlayout_fx_03|Slide Up"
+component_fx: "component_fx_01|None\r\ncomponent_fx_02|Fade In\r\ncomponent_fx_03|Slide Up"

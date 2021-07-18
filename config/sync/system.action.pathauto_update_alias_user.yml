@@ -1,4 +1,4 @@
-uuid: 234313a4-dd86-4e59-8173-9b7cfe05f561
+uuid: 4caccc6d-fccf-441b-8124-c2820610f96b
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - pathauto
 _core:
-  default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
+  default_config_hash: OV5t6vCPMdgytlDUopq7rwW43Cs1Kw6TH2PuwMchV4c
 id: pathauto_update_alias_user
 label: 'Update URL alias'
 type: user

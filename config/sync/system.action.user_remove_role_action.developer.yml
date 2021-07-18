@@ -1,4 +1,4 @@
-uuid: dccd1cde-bcf6-42fa-a7e8-0628abf6c0a6
+uuid: 949a778f-9804-481e-a979-7d330964b82f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - user.role.developer
   module:
     - user
+_core:
+  default_config_hash: mNrW91sESHi96zgaGsl9Cct8PZCXXHFlz35ajBj87rM
 id: user_remove_role_action.developer
 label: 'Remove the Developer role from the selected user(s)'
 type: user

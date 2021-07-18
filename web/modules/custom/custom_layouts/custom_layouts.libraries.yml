@@ -1,0 +1,26 @@
+global_layouts:
+  version: VERSION
+  js:
+    js/custom_layouts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+# CSS libraries for Layout plugins.
+onecolumn:
+  version: VERSION
+  css:
+    theme:
+      layouts/onecolumn/onecolumn.css: {}
+twocolumn:
+  version: VERSION
+  css:
+    theme:
+      layouts/twocolumn/twocolumn.css: {}
+threecolumn:
+  version: VERSION
+  css:
+    theme:
+      layouts/threecolumn/threecolumn.css: {}
+

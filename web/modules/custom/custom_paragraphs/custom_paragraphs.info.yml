@@ -1,0 +1,21 @@
+name: Custom Paragraphs
+type: module
+description: Custom paragraph bundles with default styles and behaviours.
+core_version_requirement: ^8.8.0 || ^9.0
+package: Custom
+configure: custom_paragraphs.settings
+dependencies:
+  - drupal:paragraphs
+  - drupal:layout_discovery
+  - custom_layouts
+install:
+  - text
+  - options
+  - link
+  - ckeditor
+  - block
+  - field_group
+  - entity_reference_revisions
+  - paragraphs
+  - paragraphs_library
+  - custom_layouts

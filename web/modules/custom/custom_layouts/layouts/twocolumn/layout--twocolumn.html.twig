@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ * - settings: The custom form settings for the layout.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Attach CSS/JS Libraries #}
+{{ attach_library('custom_layouts/global_layouts') }}
+
+{# Get the column widths #}
+{% set column_widths = settings.column_widths|split('-') %}
+
+{% if content %}
+
+      <div{{ attributes }}>
+
+        {% if content.first %}
+          <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'width--' ~ column_widths.0) }}>
+            {{ content.first }}
+          </div>
+        {% endif %}
+
+        {% if content.second %}
+          <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'width--' ~ column_widths.1) }}>
+            {{ content.second }}
+          </div>
+        {% endif %}
+
+      </div>
+{% endif %}
+

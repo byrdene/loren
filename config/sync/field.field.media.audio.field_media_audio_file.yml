@@ -1,4 +1,4 @@
-uuid: 9c70ef1f-7664-4030-bec9-b1d0bde9ca0d
+uuid: bba7ba04-3a19-494d-a098-5110c19b0f61
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - media.type.audio
   module:
     - file
+_core:
+  default_config_hash: sI-7KvS4Qbg6EucALXjwYEotxgxUfH-bMC19yTpZ1kw
 id: media.audio.field_media_audio_file
 field_name: field_media_audio_file
 entity_type: media

@@ -1,4 +1,4 @@
-uuid: dca375b2-de94-43ca-b780-a5dfeeea44e3
+uuid: 67b24531-916b-40fc-913d-a198fc5a6a52
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - user.role.site_admin
   module:
     - user
+_core:
+  default_config_hash: zmKpVVlckKbvgZXU8Ny3UrvTvDc4X3lnyOg-9IKLqNE
 id: user_remove_role_action.site_admin
 label: 'Remove the Site Admin role from the selected user(s)'
 type: user

@@ -1,7 +1,9 @@
-uuid: 2e287d77-5502-4997-9451-f8ef09d6976a
+uuid: 2be97557-9082-4bc2-a5eb-1af21216c242
 langcode: en
 status: false
 dependencies: {  }
+_core:
+  default_config_hash: s-thPnMlRCKvaYgwUpsIkzbHpwTDZvCTBgPnqk39AuA
 id: test
 label: Test
 description: 'This is the Test or Stage environment.'

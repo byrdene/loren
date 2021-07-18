@@ -1,0 +1,18 @@
+uuid: 063a7fc9-dbdd-4860-a8a8-09cac23c5178
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.layout.field_layout_bgcolor
+    - paragraphs.paragraphs_type.layout
+_core:
+  default_config_hash: PXT6MCQsH2vRnlFcJ7zE9AM3B8ZZOw0bndQHmzDcvzE
+id: paragraph.layout.preview
+targetEntityType: paragraph
+bundle: layout
+mode: preview
+content: {  }
+hidden:
+  field_layout_bgcolor: true
+  search_api_excerpt: true

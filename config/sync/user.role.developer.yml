@@ -1,7 +1,9 @@
-uuid: 421f2a0c-b276-4d79-b549-e88851445e25
+uuid: 26e242d0-e4ae-4ae1-9386-57a756934121
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: pBCg8pL54tdYT2eAMGL2_eDGhZHoe55yCqJLec_sKeI
 id: developer
 label: Developer
 weight: 4

@@ -1,4 +1,4 @@
-uuid: 432753e2-0a4c-4625-b4bf-5d3c0103b14f
+uuid: 04804739-2b68-4578-8a8c-d772c5d9c45f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - image.style.4x3_medium
     - image.style.4x3_small
     - image.style.4x3_x_small
+_core:
+  default_config_hash: n2SA9G6s8TV3tuFacMpI2hFveu3muDOLg4SSdmK35po
 id: landscape_contained_4x3
 label: 'Landscape - Contained (4x3)'
 image_style_mappings:
