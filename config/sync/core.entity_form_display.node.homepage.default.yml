@@ -18,8 +18,11 @@ dependencies:
     - field.field.node.homepage.field_intro_text_pa
     - field.field.node.homepage.field_intro_text_resources
     - field.field.node.homepage.field_linkedin
+    - field.field.node.homepage.field_location_statement
+    - field.field.node.homepage.field_metatags
     - field.field.node.homepage.field_outro_text_pa
     - field.field.node.homepage.field_phone
+    - field.field.node.homepage.field_practice_areas
     - field.field.node.homepage.field_quote_1
     - field.field.node.homepage.field_quote_2
     - field.field.node.homepage.field_quote_3
@@ -31,6 +34,8 @@ dependencies:
     - field_group
     - link
     - media_library
+    - metatag
+    - paragraphs
     - telephone
     - text
     - webform
@@ -39,6 +44,7 @@ third_party_settings:
     group_banner:
       children:
         - field_summary_items
+        - field_location_statement
         - field_background_image
       parent_name: ''
       weight: 1
@@ -55,6 +61,7 @@ third_party_settings:
     group_practi:
       children:
         - field_intro_text_pa
+        - field_practice_areas
         - field_outro_text_pa
       parent_name: ''
       weight: 2
@@ -73,17 +80,17 @@ third_party_settings:
         - field_biography
         - field_headshot
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: details
       region: content
       format_settings:
-        show_empty_fields: false
+        description: ''
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
+        show_empty_fields: false
         open: false
-        required_fields: true
-      label: About
+      label: 'About Loren Rosenzweig'
     group_resources:
       children:
         - field_intro_text_resources
@@ -125,7 +132,7 @@ third_party_settings:
         - field_attribution_1
         - field_callout_image_1
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       region: content
       format_settings:
@@ -142,7 +149,7 @@ third_party_settings:
         - field_attribution_2
         - field_callout_image_2
       parent_name: ''
-      weight: 5
+      weight: 6
       format_type: details
       region: content
       format_settings:
@@ -176,7 +183,7 @@ bundle: homepage
 mode: default
 content:
   field_attribution_1:
-    weight: 8
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -201,7 +208,7 @@ content:
     region: content
   field_background_image:
     type: media_library_widget
-    weight: 3
+    weight: 4
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -216,7 +223,7 @@ content:
     region: content
   field_callout_image_1:
     type: media_library_widget
-    weight: 9
+    weight: 10
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -236,7 +243,7 @@ content:
     third_party_settings: {  }
     region: content
   field_contact_form:
-    weight: 14
+    weight: 15
     settings:
       default_data: true
       webforms: {  }
@@ -244,7 +251,7 @@ content:
     type: webform_entity_reference_select
     region: content
   field_facebook:
-    weight: 15
+    weight: 16
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -281,7 +288,7 @@ content:
     type: text_textarea
     region: content
   field_intro_text_resources:
-    weight: 9
+    weight: 20
     settings:
       rows: 3
       placeholder: ''
@@ -292,15 +299,30 @@ content:
     type: text_textarea
     region: content
   field_linkedin:
-    weight: 17
+    weight: 18
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_location_statement:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_metatags:
+    weight: 10
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_outro_text_pa:
-    weight: 27
+    weight: 28
     settings:
       rows: 3
       placeholder: ''
@@ -311,11 +333,23 @@ content:
     type: text_textarea
     region: content
   field_phone:
-    weight: 18
+    weight: 19
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
+  field_practice_areas:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: 'Practice Area'
+      title_plural: 'Practice Areas'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: practice_area
+    third_party_settings: {  }
     region: content
   field_quote_1:
     weight: 7
@@ -359,7 +393,7 @@ content:
     type: string_textfield
     region: content
   field_twitter:
-    weight: 16
+    weight: 17
     settings:
       placeholder_url: ''
       placeholder_title: ''

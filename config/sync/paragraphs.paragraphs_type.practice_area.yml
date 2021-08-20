@@ -1,0 +1,10 @@
+uuid: 9a759475-0162-41da-bfb0-1580562cbd38
+langcode: en
+status: true
+dependencies: {  }
+id: practice_area
+label: 'Practice Area'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

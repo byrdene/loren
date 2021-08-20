@@ -1,0 +1,19 @@
+uuid: 6d6f0b76-92ea-43a9-871e-22ec39c72c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.practice_area
+id: paragraph.practice_area.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: practice_area
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

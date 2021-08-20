@@ -19,8 +19,11 @@ dependencies:
     - field.field.node.homepage.field_intro_text_pa
     - field.field.node.homepage.field_intro_text_resources
     - field.field.node.homepage.field_linkedin
+    - field.field.node.homepage.field_location_statement
+    - field.field.node.homepage.field_metatags
     - field.field.node.homepage.field_outro_text_pa
     - field.field.node.homepage.field_phone
+    - field.field.node.homepage.field_practice_areas
     - field.field.node.homepage.field_quote_1
     - field.field.node.homepage.field_quote_2
     - field.field.node.homepage.field_quote_3
@@ -55,8 +58,11 @@ hidden:
   field_intro_text_pa: true
   field_intro_text_resources: true
   field_linkedin: true
+  field_location_statement: true
+  field_metatags: true
   field_outro_text_pa: true
   field_phone: true
+  field_practice_areas: true
   field_quote_1: true
   field_quote_2: true
   field_quote_3: true

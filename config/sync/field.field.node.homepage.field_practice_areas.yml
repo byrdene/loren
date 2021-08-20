@@ -1,0 +1,37 @@
+uuid: 186cb6a8-a793-44d9-93ff-616b7c733581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_practice_areas
+    - node.type.homepage
+    - paragraphs.paragraphs_type.practice_area
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_practice_areas
+field_name: field_practice_areas
+entity_type: node
+bundle: homepage
+label: 'Practice Areas'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      practice_area: practice_area
+    target_bundles_drag_drop:
+      layout:
+        weight: 4
+        enabled: false
+      practice_area:
+        enabled: true
+        weight: 5
+      text_block:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
