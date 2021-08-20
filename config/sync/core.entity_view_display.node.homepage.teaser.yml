@@ -1,31 +1,65 @@
 uuid: 01de23b1-7bf0-463c-b85d-477baaeccd13
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.homepage.body
+    - field.field.node.homepage.field_attribution_1
+    - field.field.node.homepage.field_attribution_2
+    - field.field.node.homepage.field_attribution_3
+    - field.field.node.homepage.field_background_image
+    - field.field.node.homepage.field_biography
+    - field.field.node.homepage.field_callout_image_1
+    - field.field.node.homepage.field_callout_image_2
+    - field.field.node.homepage.field_callout_image_3
+    - field.field.node.homepage.field_contact_form
+    - field.field.node.homepage.field_facebook
+    - field.field.node.homepage.field_headshot
+    - field.field.node.homepage.field_intro_text_contact
+    - field.field.node.homepage.field_intro_text_pa
+    - field.field.node.homepage.field_intro_text_resources
+    - field.field.node.homepage.field_linkedin
+    - field.field.node.homepage.field_outro_text_pa
+    - field.field.node.homepage.field_phone
+    - field.field.node.homepage.field_quote_1
+    - field.field.node.homepage.field_quote_2
+    - field.field.node.homepage.field_quote_3
+    - field.field.node.homepage.field_summary_items
+    - field.field.node.homepage.field_twitter
     - node.type.homepage
   module:
-    - text
     - user
 id: node.homepage.teaser
 targetEntityType: node
 bundle: homepage
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_attribution_1: true
+  field_attribution_2: true
+  field_attribution_3: true
+  field_background_image: true
+  field_biography: true
+  field_callout_image_1: true
+  field_callout_image_2: true
+  field_callout_image_3: true
+  field_contact_form: true
+  field_facebook: true
+  field_headshot: true
+  field_intro_text_contact: true
+  field_intro_text_pa: true
+  field_intro_text_resources: true
+  field_linkedin: true
+  field_outro_text_pa: true
+  field_phone: true
+  field_quote_1: true
+  field_quote_2: true
+  field_quote_3: true
+  field_summary_items: true
+  field_twitter: true
   search_api_excerpt: true

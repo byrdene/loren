@@ -3,27 +3,225 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.homepage.body
+    - field.field.node.homepage.field_attribution_1
+    - field.field.node.homepage.field_attribution_2
+    - field.field.node.homepage.field_attribution_3
+    - field.field.node.homepage.field_background_image
+    - field.field.node.homepage.field_biography
+    - field.field.node.homepage.field_callout_image_1
+    - field.field.node.homepage.field_callout_image_2
+    - field.field.node.homepage.field_callout_image_3
+    - field.field.node.homepage.field_contact_form
+    - field.field.node.homepage.field_facebook
+    - field.field.node.homepage.field_headshot
+    - field.field.node.homepage.field_intro_text_contact
+    - field.field.node.homepage.field_intro_text_pa
+    - field.field.node.homepage.field_intro_text_resources
+    - field.field.node.homepage.field_linkedin
+    - field.field.node.homepage.field_outro_text_pa
+    - field.field.node.homepage.field_phone
+    - field.field.node.homepage.field_quote_1
+    - field.field.node.homepage.field_quote_2
+    - field.field.node.homepage.field_quote_3
+    - field.field.node.homepage.field_summary_items
+    - field.field.node.homepage.field_twitter
     - node.type.homepage
   module:
+    - link
+    - telephone
     - text
     - user
+    - webform
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
 mode: default
 content:
-  body:
+  field_attribution_1:
+    weight: 12
     label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attribution_2:
+    weight: 13
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attribution_3:
+    weight: 14
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_background_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: landscape_full_width_16x9
+      link: false
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_biography:
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
+  field_callout_image_1:
+    type: entity_reference_entity_view
+    weight: 15
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_callout_image_2:
+    type: entity_reference_entity_view
+    weight: 16
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_callout_image_3:
+    type: entity_reference_entity_view
+    weight: 17
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contact_form:
+    weight: 7
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_facebook:
+    weight: 18
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_headshot:
+    type: entity_reference_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: portrait_2x3
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_intro_text_contact:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_intro_text_pa:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_intro_text_resources:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_linkedin:
+    weight: 20
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_outro_text_pa:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_phone:
+    weight: 21
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_quote_1:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_quote_2:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_quote_3:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_summary_items:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_twitter:
+    weight: 19
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
 hidden:
+  links: true
   search_api_excerpt: true

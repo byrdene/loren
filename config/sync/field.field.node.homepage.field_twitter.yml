@@ -1,0 +1,23 @@
+uuid: 2c11db1b-ab2a-4c86-b566-64428ca17640
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.homepage
+  module:
+    - link
+id: node.homepage.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: homepage
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,27 @@
+uuid: 5785dbef-b70e-4222-9132-ec5a16def0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_2
+    - node.type.homepage
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.homepage.field_quote_2
+field_name: field_quote_2
+entity_type: node
+bundle: homepage
+label: 'Quote 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

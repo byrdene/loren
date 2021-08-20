@@ -1,0 +1,20 @@
+uuid: 8315b633-81c0-432e-bdea-1ff6d7ff0f7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_headshot
+field_name: field_headshot
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

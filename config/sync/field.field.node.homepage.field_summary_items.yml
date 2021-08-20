@@ -1,0 +1,19 @@
+uuid: da744c09-8aa1-4524-9669-310376c8b93a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_items
+    - node.type.homepage
+id: node.homepage.field_summary_items
+field_name: field_summary_items
+entity_type: node
+bundle: homepage
+label: 'Summary Items'
+description: "E.g. Estate Planning, Special Needs Estate Planning<br>\r\n<strong>Note:</strong> The last item will be emphasized with a preceding \". . . and\" and set off by itself."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
