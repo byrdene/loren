@@ -1,0 +1,233 @@
+// ==========================================================================
+//   PRIMARY-CONTENT (CONTENT and BOTH SIDEBARS)
+// ==========================================================================
+
+#primary-content {
+  section {
+    padding-top: $gutter*3;
+    .section-heading {
+      text-align: center;
+      @include font-weight(medium);
+      margin-bottom: $gutter*2;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+  .practice-areas {
+    .practice-area-grid,
+    .outro-wrapper {
+      margin-top: $gutter;
+    }
+    .practice-area {
+      &.gray-out:not(.is-visible) {
+        opacity: .2;
+      }
+      &.is-visible {
+        .practice-area-box {
+          background-color: $primary-color;
+          h3 {
+            color: $white !important;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
+          }
+          .more-info-trigger {
+            background-color: $black;
+          }
+        }
+      }
+      .practice-area-box {
+        border: 2px solid $primary-color;
+        background-color: $sand;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          color: $black;
+          text-transform: none;
+          text-align: center;
+          @include font-weight(medium);
+          padding: $gutter $gutter*1.5 $gutter*1.5 $gutter*1.5;
+          margin: $gutter 0;
+        }
+        .more-info-trigger {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: $primary-color;
+          color: $white;
+          font-family: "serif";
+          @include font-weight(bold);
+          @include font-size(24px);
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 0;
+          cursor: pointer;
+          z-index: 1;
+          &:hover {
+            background-color: $black;
+            & + .field {
+              h3 {
+              background: rgba(255,255,255,.6);
+              }
+            }
+          }
+        }
+      }
+
+      .more-info {
+        margin-top: $gutter;
+        width: 100%;
+      }
+
+      // create the grid
+      float: none;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 2em;
+      @include bp(small, up) {
+        float: left;
+        .more-info {
+          width: 200%;
+        }
+        &:nth-of-type(2n+1) { // First item (1st in row of 2)
+          clear: left;
+          width: 49%;
+          margin: 0 1% 2em 0;
+        }
+        &:nth-of-type(2n+2) { // Middle item (2nd in row of 2)
+          width: 49%;
+          margin: 0 0 2em 1%;
+          .more-info {
+            margin-left: -104%;
+          }
+        }
+      }
+      @include bp(large, up) {
+        float: left;
+        &:nth-of-type(2n+1) {
+          clear: none; // reset from previous breakpoint
+        }
+        &:nth-of-type(2n+1) {
+          .more-info {
+            margin-left: 0;
+          }
+        }
+        &:nth-of-type(4n+1) { // First item (1st in row of 4)
+          clear: left;
+          width: 23.5%;
+          margin: 0 1% 2em 0;
+          .more-info {
+            margin-left: 108%;
+          }
+        }
+        &:nth-of-type(4n+2) { // Second item (2nd in row of 4)
+          width: 23.5%;
+          margin: 0 1% 2em 1%;
+          .more-info {
+            margin-left: 0;
+          }
+        }
+        &:nth-of-type(4n+3) { // Third item (3rd in row of 4)
+          width: 23.5%;
+          margin: 0 1% 2em 1%;
+          .more-info {
+            margin-left: -108%;
+          }
+        }
+        &:nth-of-type(4n) { // Last item (4th in row of 4)
+          width: 23.5%;
+          margin: 0 0 2em 1%;
+          .more-info {
+            margin-left: -216%;
+          }
+        }
+      }
+
+    }
+  }
+
+  .callout {
+    .callout-text {
+      @include font-size(24px);
+      position: relative;
+      line-height: 30px;
+      @include font-weight(bold);
+      padding-left: $gutter*2;
+      &:before {
+        display: block;
+        position: absolute;
+        left: -.5em;
+        top: -.15em;
+        font-family: $icomoon;
+        font-size: 3.5em;
+        content: $icon-quotes-left;
+      }
+      .attribution {
+        text-transform: capitalize;
+        @include font-size(18px);
+        margin-top: $gutter;
+        margin-left: $gutter;
+        position: relative;
+        &:before {
+          position: absolute;
+          left: -($gutter);
+          content: "\2014";
+        }
+      }
+    }
+    .callout-image {
+      float: right;
+      width: 30%;
+      padding-left: $gutter/2;
+      > .field {
+        border: 2px solid $white;
+        border-radius: 2px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
+      }
+      & + .callout-text {
+        width: 70%;
+      }
+      @include bp(small, up) {
+        padding-left: $gutter*2;
+      }
+    }
+  }
+
+  .about {
+    .about-photo {
+      margin: 0 auto;
+      padding-bottom: $gutter;
+      > .field {
+        border: 1px solid $black;
+        border-radius: 2px;
+        //box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
+      }
+    }
+    .about-bio {}
+    @include bp(small, up) {
+      .about-photo {
+        float: left;
+        width: 35%;
+        padding-right: $gutter*2;
+      }
+      .about-bio {
+        float: left;
+        width: 65%;
+      }
+    }
+  }
+
+  .resources {
+    .resource-section {
+      & + .resource-section {
+        margin-top: $gutter*2;
+      }
+    }
+  }
+
+  .contact {
+    padding-bottom: $gutter*3;
+    a {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+name: Loren
+type: theme
+base theme: false
+description: "Loren's theme."
+package: Core
+core_version_requirement: ^8.8.0 || ^9.0
+
+libraries:
+  - loren/global
+  - loren/tabs #part of admin interface
+  - loren/messages #part of admin interface
+  - loren/fonts
+
+# Uncomment to override unnecessary js libraries. Example below:
+#libraries-override:
+#  loren/global:
+#    js:
+#      dist/js/loren-utilities.js: false
+#      dist/js/xxxxx
+
+ckeditor_stylesheets:
+  - dist/css/ckeditor.css
+
+regions:
+  page_top: 'Page top'
+  header: Header
+  navigation_secondary: 'Navigation secondary'
+  navigation_primary: 'Navigation primary'
+  banner: Banner
+  pre_content: Pre-content
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  post_content: Post-content
+  footer_first: Footer first
+  footer_second: Footer second
+  footer_third: Footer third
+  page_bottom: 'Page bottom'
+
+project: 'loren'

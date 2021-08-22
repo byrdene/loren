@@ -1,0 +1,20 @@
+uuid: 17ecef1e-4aa8-49ad-aaea-8526f5ee913d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - loren
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: loren_local_actions
+theme: loren
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

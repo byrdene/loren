@@ -1,0 +1,57 @@
+loren.embedded.mobile:
+  label: mobile
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+   - 1x
+  group: loren.embedded
+loren.embedded.narrow:
+  label: narrow
+  mediaQuery: '(min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: loren.embedded
+loren.embedded.wide:
+  label: wide
+  mediaQuery: '(min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: loren.embedded
+loren.embedded.xwide:
+  label: extra wide
+  mediaQuery: '(min-width: 1824px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: loren.embedded
+
+loren.landscape.mobile:
+  label: mobile
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: loren.landscape
+loren.landscape.narrow:
+  label: narrow
+  mediaQuery: '(min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: loren.landscape
+loren.landscape.wide:
+  label: wide
+  mediaQuery: '(min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: loren.landscape
+loren.landscape.xwide:
+  label: extra wide
+  mediaQuery: '(min-width: 1824px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: loren.landscape

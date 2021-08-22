@@ -1,0 +1,26 @@
+uuid: c3234332-82b2-46d9-bee1-520dc1e027cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loren
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: loren_page_title
+theme: loren
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: true

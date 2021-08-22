@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_address
+    - field.field.node.homepage.field_address_2
+    - field.field.node.homepage.field_articles
     - field.field.node.homepage.field_attribution_1
     - field.field.node.homepage.field_attribution_2
     - field.field.node.homepage.field_attribution_3
@@ -12,7 +15,11 @@ dependencies:
     - field.field.node.homepage.field_callout_image_2
     - field.field.node.homepage.field_callout_image_3
     - field.field.node.homepage.field_contact_form
+    - field.field.node.homepage.field_email
     - field.field.node.homepage.field_facebook
+    - field.field.node.homepage.field_fax
+    - field.field.node.homepage.field_forms
+    - field.field.node.homepage.field_google_map
     - field.field.node.homepage.field_headshot
     - field.field.node.homepage.field_intro_text_contact
     - field.field.node.homepage.field_intro_text_pa
@@ -26,6 +33,7 @@ dependencies:
     - field.field.node.homepage.field_quote_1
     - field.field.node.homepage.field_quote_2
     - field.field.node.homepage.field_quote_3
+    - field.field.node.homepage.field_resource_links
     - field.field.node.homepage.field_summary_items
     - field.field.node.homepage.field_twitter
     - node.type.homepage
@@ -36,12 +44,36 @@ dependencies:
     - telephone
     - text
     - user
-    - webform
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  field_address:
+    weight: 27
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_2:
+    weight: 28
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_articles:
+    type: entity_reference_entity_view
+    weight: 32
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_attribution_1:
     weight: 12
     label: hidden
@@ -110,15 +142,52 @@ content:
     third_party_settings: {  }
     region: content
   field_contact_form:
-    weight: 7
+    weight: 30
     label: hidden
     settings:
-      source_entity: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    type: entity_reference_entity_view
+    region: content
+  field_email:
+    weight: 25
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
     region: content
   field_facebook:
     weight: 18
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_fax:
+    weight: 29
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_forms:
+    type: entity_reference_entity_view
+    weight: 31
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_google_map:
+    weight: 26
     label: hidden
     settings:
       trim_length: 80
@@ -134,7 +203,7 @@ content:
     weight: 5
     label: hidden
     settings:
-      view_mode: portrait_2x3
+      view_mode: embedded
       link: false
     third_party_settings: {  }
     region: content
@@ -173,7 +242,7 @@ content:
     region: content
   field_location_statement:
     weight: 24
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -226,6 +295,13 @@ content:
     region: content
   field_quote_3:
     weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_resource_links:
+    weight: 33
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,10 @@
+
+{% extends "paragraph.html.twig" %}
+
+{% block componentContent %}
+
+  {# Attach CSS/JS Libraries #}
+  {{ attach_library('loren/modal-video') }}
+  {{ content|without('field_heading') }}
+{% endblock %}
+

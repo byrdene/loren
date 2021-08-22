@@ -10,12 +10,12 @@ weight: 3
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
   - 'access files overview'
   - 'access media overview'
   - 'access toolbar'
   - 'create document media'
   - 'create image media'
-  - 'edit any homepage content'
   - 'edit own document media'
   - 'edit own image media'
   - 'view any webform submission'

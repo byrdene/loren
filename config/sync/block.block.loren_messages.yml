@@ -1,0 +1,22 @@
+uuid: 12fc0b2a-bb5d-4820-8f1f-d4e08d81b4ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loren
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: loren_messages
+theme: loren
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

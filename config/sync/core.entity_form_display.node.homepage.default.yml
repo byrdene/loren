@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_address
+    - field.field.node.homepage.field_address_2
+    - field.field.node.homepage.field_articles
     - field.field.node.homepage.field_attribution_1
     - field.field.node.homepage.field_attribution_2
     - field.field.node.homepage.field_attribution_3
@@ -12,7 +15,11 @@ dependencies:
     - field.field.node.homepage.field_callout_image_2
     - field.field.node.homepage.field_callout_image_3
     - field.field.node.homepage.field_contact_form
+    - field.field.node.homepage.field_email
     - field.field.node.homepage.field_facebook
+    - field.field.node.homepage.field_fax
+    - field.field.node.homepage.field_forms
+    - field.field.node.homepage.field_google_map
     - field.field.node.homepage.field_headshot
     - field.field.node.homepage.field_intro_text_contact
     - field.field.node.homepage.field_intro_text_pa
@@ -26,6 +33,7 @@ dependencies:
     - field.field.node.homepage.field_quote_1
     - field.field.node.homepage.field_quote_2
     - field.field.node.homepage.field_quote_3
+    - field.field.node.homepage.field_resource_links
     - field.field.node.homepage.field_summary_items
     - field.field.node.homepage.field_twitter
     - node.type.homepage
@@ -38,7 +46,6 @@ dependencies:
     - paragraphs
     - telephone
     - text
-    - webform
 third_party_settings:
   field_group:
     group_banner:
@@ -80,7 +87,7 @@ third_party_settings:
         - field_biography
         - field_headshot
       parent_name: ''
-      weight: 5
+      weight: 4
       format_type: details
       region: content
       format_settings:
@@ -94,8 +101,11 @@ third_party_settings:
     group_resources:
       children:
         - field_intro_text_resources
+        - field_forms
+        - field_articles
+        - field_resource_links
       parent_name: ''
-      weight: 7
+      weight: 6
       format_type: details
       region: content
       format_settings:
@@ -108,14 +118,17 @@ third_party_settings:
       label: Resources
     group_contact:
       children:
-        - field_intro_text_contact
-        - field_contact_form
+        - field_phone
+        - field_fax
+        - field_email
+        - field_address
+        - field_address_2
+        - field_google_map
         - field_facebook
         - field_twitter
         - field_linkedin
-        - field_phone
       parent_name: ''
-      weight: 9
+      weight: 10
       format_type: details
       region: content
       format_settings:
@@ -132,7 +145,7 @@ third_party_settings:
         - field_attribution_1
         - field_callout_image_1
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: details
       region: content
       format_settings:
@@ -149,7 +162,7 @@ third_party_settings:
         - field_attribution_2
         - field_callout_image_2
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: details
       region: content
       format_settings:
@@ -166,7 +179,7 @@ third_party_settings:
         - field_attribution_3
         - field_callout_image_3
       parent_name: ''
-      weight: 8
+      weight: 9
       format_type: details
       region: content
       format_settings:
@@ -182,6 +195,29 @@ targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  field_address:
+    weight: 24
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_2:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_articles:
+    type: media_library_widget
+    weight: 22
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_attribution_1:
     weight: 9
     settings:
@@ -242,16 +278,38 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  field_contact_form:
-    weight: 15
+  field_email:
+    weight: 23
     settings:
-      default_data: true
-      webforms: {  }
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: webform_entity_reference_select
+    type: email_default
     region: content
   field_facebook:
-    weight: 16
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_fax:
+    weight: 22
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_forms:
+    type: media_library_widget
+    weight: 21
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_google_map:
+    weight: 27
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -264,17 +322,6 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
-  field_intro_text_contact:
-    weight: 13
-    settings:
-      rows: 3
-      placeholder: ''
-    third_party_settings:
-      allowed_formats:
-        hide_help: '1'
-        hide_guidelines: '1'
-    type: text_textarea
     region: content
   field_intro_text_pa:
     weight: 26
@@ -299,7 +346,7 @@ content:
     type: text_textarea
     region: content
   field_linkedin:
-    weight: 18
+    weight: 30
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -315,7 +362,7 @@ content:
     type: string_textfield
     region: content
   field_metatags:
-    weight: 10
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -333,7 +380,7 @@ content:
     type: text_textarea
     region: content
   field_phone:
-    weight: 19
+    weight: 21
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -345,7 +392,7 @@ content:
     settings:
       title: 'Practice Area'
       title_plural: 'Practice Areas'
-      edit_mode: open
+      edit_mode: preview
       add_mode: button
       form_display_mode: default
       default_paragraph_type: practice_area
@@ -384,6 +431,17 @@ content:
         hide_guidelines: '1'
     type: text_textarea
     region: content
+  field_resource_links:
+    weight: 23
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
   field_summary_items:
     weight: 2
     settings:
@@ -393,7 +451,7 @@ content:
     type: string_textfield
     region: content
   field_twitter:
-    weight: 17
+    weight: 29
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -410,6 +468,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_contact_form: true
+  field_intro_text_contact: true
   moderation_state: true
   path: true
   promote: true

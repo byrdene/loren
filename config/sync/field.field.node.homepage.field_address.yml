@@ -1,0 +1,21 @@
+uuid: 05962524-b4f6-427f-a45b-059a57cb74bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.homepage
+id: node.homepage.field_address
+field_name: field_address
+entity_type: node
+bundle: homepage
+label: 'Street Address'
+description: 'Street, Office/Suite Number'
+required: true
+translatable: false
+default_value:
+  -
+    value: '233 Needham Street, Suite 500'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -4,6 +4,9 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.homepage.field_address
+    - field.field.node.homepage.field_address_2
+    - field.field.node.homepage.field_articles
     - field.field.node.homepage.field_attribution_1
     - field.field.node.homepage.field_attribution_2
     - field.field.node.homepage.field_attribution_3
@@ -13,7 +16,11 @@ dependencies:
     - field.field.node.homepage.field_callout_image_2
     - field.field.node.homepage.field_callout_image_3
     - field.field.node.homepage.field_contact_form
+    - field.field.node.homepage.field_email
     - field.field.node.homepage.field_facebook
+    - field.field.node.homepage.field_fax
+    - field.field.node.homepage.field_forms
+    - field.field.node.homepage.field_google_map
     - field.field.node.homepage.field_headshot
     - field.field.node.homepage.field_intro_text_contact
     - field.field.node.homepage.field_intro_text_pa
@@ -27,6 +34,7 @@ dependencies:
     - field.field.node.homepage.field_quote_1
     - field.field.node.homepage.field_quote_2
     - field.field.node.homepage.field_quote_3
+    - field.field.node.homepage.field_resource_links
     - field.field.node.homepage.field_summary_items
     - field.field.node.homepage.field_twitter
     - node.type.homepage
@@ -43,6 +51,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_address: true
+  field_address_2: true
+  field_articles: true
   field_attribution_1: true
   field_attribution_2: true
   field_attribution_3: true
@@ -52,7 +63,11 @@ hidden:
   field_callout_image_2: true
   field_callout_image_3: true
   field_contact_form: true
+  field_email: true
   field_facebook: true
+  field_fax: true
+  field_forms: true
+  field_google_map: true
   field_headshot: true
   field_intro_text_contact: true
   field_intro_text_pa: true
@@ -66,6 +81,7 @@ hidden:
   field_quote_1: true
   field_quote_2: true
   field_quote_3: true
+  field_resource_links: true
   field_summary_items: true
   field_twitter: true
   search_api_excerpt: true

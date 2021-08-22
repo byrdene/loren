@@ -1,0 +1,81 @@
+@import "0-config/__config";
+
+// LAYOUT: Macro arrangement of a web page, including any grid systems.
+// Read more about SMACSS categorization for Drupal Themes: https://www.drupal.org/node/1887922
+
+// This file is compiled separately so we can pull in config dependencies above
+// while also maintaining Drupal's SMACSS structure.
+
+.layout-container {
+  div,
+  section {
+    position: relative;
+    @include clearfix;
+  }
+}
+
+.container {
+  @include center-block;
+}
+
+.full-width {
+  width: 100%;
+  max-width: none;
+}
+
+.page-width {
+  width: 100%;
+  max-width: $page-width;;
+}
+
+.medium-width {
+  width: 100%;
+  max-width: $content-width;
+}
+
+.small-width {
+  width: 100%;
+  max-width: $body-width;
+}
+
+.padded-row {
+  padding: 0 $gutter;
+  @include bp(medium, up) {
+    padding: 0 $gutter*2;
+  }
+}
+
+.bg-primary {
+  background-color: $primary-color;
+  color: $white;
+  padding-top: $gutter*2.5;
+  padding-bottom: $gutter*2;
+  padding-left: $gutter;
+  @include bp(medium, up) {
+    padding-left: 0;
+  }
+}
+
+.white {
+  background-color: $white;
+}
+
+.white-faded {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(255,255,255,.3);
+  }
+  .section-heading {
+    border-bottom-color: $white !important;
+  }
+}
+
+@import "2-layout/header";
+@import "2-layout/primary-content";
+@import "2-layout/footer";

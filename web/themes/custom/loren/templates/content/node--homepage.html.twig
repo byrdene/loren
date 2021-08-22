@@ -1,0 +1,217 @@
+{# Attach CSS/JS Libraries #}
+{{ attach_library('loren/equalize') }}
+
+<!-- HEADER -->
+<header>
+  <h1 class="visually-hidden">{{ label }}</h1>
+
+  <div class="container full-width header-navigation">
+    <div class="container page-width header-navigation-wrapper">
+    <nav class="menu--page-links">
+      <ul class="menu">
+        <li class="menu-item"><a href="#practice">Practice Areas</a></li>
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#resources">Resources</a></li>
+        <li class="menu-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-header">
+      <nav class="menu--social-media">
+        <ul class="menu">
+          <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>
+          <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>
+          <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>
+        </ul>
+      </nav>
+      <div class="contact-header-phone">{{ content.field_phone }}</div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container full-width padded-row header-logo">
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ base_path ~ directory }}/logo.png" alt="{{ 'Home'|t }}"/>
+    </a>
+  </div>
+
+  <div class="container full-width hero-main">
+    <div class="container page-width padded-row hero-main-wrapper">
+      <div class="hero-collage"><img src="{{ base_path ~ directory }}/static/images/collage.png" alt=""/></div>
+      <div class="hero-text">
+        <h2>Preserving Your Legacy</h2>
+        <div class="hero-summary">{{ content.field_summary_items }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-background">
+    <div class="hero-gradient"></div>
+    <img src="{{ base_path ~ directory }}/static/images/ellis-island.jpg" alt="">
+  </div>
+
+
+  <div class="container full-width bg-primary hero-footer">
+    <div class="container medium-width padded-row">
+      <div class="hero-footer-wrapper">
+        <div class="hero-footer-text">{{ content.field_location_statement }}</div>
+        <div class="hero-footer-button"><a class="button button-outlined-white" href="#contact">Contact</a></div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- MAIN PAGE CONTENT -->
+<main id="main-content" tabindex="-1">
+
+
+  <!-- PRIMARY-CONTENT -->
+  <div id="primary-content">
+    <div class="container">
+
+      <div id="content">
+
+        <section class="container full-width practice-areas white" id="practice">
+          <div class="container small-width padded-row intro-wrapper">
+            <h2 class="h1 section-heading">Practice Areas</h2>
+            {{ content.field_intro_text_pa }}
+          </div>
+
+          <div class="container page-width padded-row practice-area-grid">{{ content.field_practice_areas }}</div>
+
+          <div class="container small-width padded-row outro-wrapper">
+          {{ content.field_outro_text_pa }}
+          </div>
+        </section>
+
+        <section id="callout1" class="container full-width callout white">
+          <div class="bg-primary">
+          <div class="container medium-width padded-row callout-wrapper">
+            {% if content.field_callout_image_1|render %}
+              <div class="callout-image">
+                {{ content.field_callout_image_1 }}
+              </div>
+            {% endif %}
+            <div class="callout-text">
+              {{ content.field_quote_1 }}
+              <div class="attribution">{{ content.field_attribution_1 }}</div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="container full-width about white" id="about">
+          <div class="container page-width padded-row about-wrapper">
+          <div class="container small-width padded-row"><h2 class="h1 section-heading">About Loren Rosenzweig</h2></div>
+            <div class="about-photo">{{ content.field_headshot }}</div>
+            <div class="about-bio rte">{{ content.field_biography }}</div>
+          </div>
+
+        </section>
+
+        <section id="callout2" class="container full-width callout white">
+          <div class="bg-primary">
+          <div class="container medium-width padded-row callout-wrapper">
+            {% if content.field_callout_image_2|render %}
+              <div class="callout-image">
+                {{ content.field_callout_image_2 }}
+              </div>
+            {% endif %}
+            <div class="callout-text">
+              {{ content.field_quote_2 }}
+              <div class="attribution">{{ content.field_attribution_2 }}</div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="container resources white" id="resources">
+          <div class="container small-width padded-row resources-wrapper">
+          <div class="container small-width padded-row"><h2 class="h1 section-heading">Resources</h2></div>
+            {% if content.field_forms|render %}
+              <div class="resource-section resources-forms">
+                <h3>Forms</h3>
+                {{ content.field_forms }}
+              </div>
+            {% endif %}
+            {% if content.field_articles|render %}
+              <div class="resource-section resources-articles">
+                <h3>Articles</h3>
+                {{ content.field_articles }}
+              </div>
+            {% endif %}
+            {% if content.field_resource_links|render %}
+              <div class="resource-section resources-links">
+                <h3>Links</h3>
+                {{ content.field_resource_links }}
+              </div>
+            {% endif %}
+
+          </div>
+        </section>
+
+        <section id="callout3" class="container full-width callout white">
+          <div class="bg-primary">
+          <div class="container medium-width padded-row callout-wrapper">
+            {% if content.field_callout_image_3|render %}
+              <div class="callout-image">
+                {{ content.field_callout_image_3 }}
+              </div>
+            {% endif %}
+            <div class="callout-text">
+              {{ content.field_quote_3 }}
+              <div class="attribution">{{ content.field_attribution_3 }}</div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="container contact white-faded" id="contact">
+          <div class="container medium-width padded-row contact-wrapper">
+          <div class="container small-width padded-row"><h2 class="h1 section-heading">Contact</h2></div>
+
+          <div class="container small-width padded-row">
+            <p>Loren C. Rosenzweig<br>
+              Attorney at Law
+              {{ content.field_address.0 }}<br>
+              {{ content.field_address_2.0 }}</p>
+
+            <p>
+              <strong>(T):</strong> {{ content.field_phone }}<br>
+              <strong>(F):</strong> {{ content.field_fax }}<br>
+              <strong>(E):</strong> {{ content.field_email }}
+            </p>
+
+            <nav class="menu--social-media">
+              <ul class="menu">
+                <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>
+                <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>
+                <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>
+              </ul>
+            </nav>
+
+            <h3>Directions to the Office</h3>
+            <a href="{{ content.field_google_map[0]['#url'] }}">See Google Maps</a>
+
+          </div>
+
+
+          </div>
+        </section>
+
+
+      </div><!-- /#content -->
+
+
+    </div><!-- /.container -->
+  </div><!-- /#primary-content -->
+
+</main>
+
+<!-- FOOTER -->
+<footer class="container full-width bg-primary">
+  <div class="container page-width padded-row">
+    <p>All rights reserved, Loren C. Rosenzweig. Copyright &#169; {{ "now"|date('Y') }}.</p>
+  </div><!-- /.container -->
+</footer>

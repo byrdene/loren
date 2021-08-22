@@ -1,0 +1,25 @@
+uuid: 625d4e5d-463c-4356-ab0d-7d8e65fa979d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.practice_area.field_description
+    - field.field.paragraph.practice_area.field_title
+    - paragraphs.paragraphs_type.practice_area
+id: paragraph.practice_area.preview
+targetEntityType: paragraph
+bundle: practice_area
+mode: preview
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_description: true
+  search_api_excerpt: true

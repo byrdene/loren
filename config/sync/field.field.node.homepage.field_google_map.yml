@@ -1,0 +1,23 @@
+uuid: a9bb0dbf-f9d0-41d7-9e95-54c982ac0bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_map
+    - node.type.homepage
+  module:
+    - link
+id: node.homepage.field_google_map
+field_name: field_google_map
+entity_type: node
+bundle: homepage
+label: 'Map It'
+description: 'Link to Google map'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

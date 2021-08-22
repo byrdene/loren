@@ -1,0 +1,2 @@
+!function(e,a){navigator.userAgent.match(/iPhone/i);function i(){var e=a(".practice-area-grid");0<e.length&&e.imagesLoaded(function(){e.equalize({children:".practice-area .practice-area-box",reset:!0})})}i(),e.behaviors.lorenEqualize={attach:function(e){a(window).on("load resize orientationchange",function(e){setTimeout(function(e){i()},100)})}}}(Drupal,jQuery);
+//# sourceMappingURL=loren-equalize.js.map
