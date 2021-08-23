@@ -1,0 +1,2 @@
+!function(e,a){var n,s=0,o=a(".sticky-header").outerHeight();a(window).scroll(function(e){n=!0}),setInterval(function(){n&&(function(){var e=a(this).scrollTop();if(Math.abs(s-e)<=5)return;s<e&&o<e?a(".sticky-header").removeClass("nav-down").removeClass("hide-nav").addClass("nav-up"):e+a(window).height()<a(document).height()&&a(".sticky-header").removeClass("nav-up").addClass("nav-down");0===e&&a(".sticky-header").removeClass("nav-up").removeClass("nav-down");s=e}(),n=!1)},250)}(Drupal,jQuery);
+//# sourceMappingURL=loren-sticky-header.js.map

@@ -12,10 +12,14 @@ global:
     theme:
       dist/css/theme.css: {}
       dist/css/print.css: { media: print }
+      static/vendor/aos.css: {}
   # Each discreet feature or function should be in a unique js file.
   js:
     dist/js/custom/loren-utilities.js: {}
+    static/vendor/aos.js: {}
+    dist/js/custom/loren-sticky-header.js: {}
     dist/js/custom/loren-smooth-scroll.js: {}
+
   dependencies:
     - core/jquery
     - core/drupal

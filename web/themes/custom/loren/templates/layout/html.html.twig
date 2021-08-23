@@ -62,10 +62,18 @@
     {{ 'Skip to main content'|t }}
   </a>
 </div>
+<div id="top"></div>
 {{ page_top }}
 {{ page }}
 {{ page_bottom }}
 <js-bottom-placeholder token="{{ placeholder_token }}">
+
+  <script>
+      AOS.init({
+          disable: false,
+      });
+  </script>
+
 </body>
 </html>
 

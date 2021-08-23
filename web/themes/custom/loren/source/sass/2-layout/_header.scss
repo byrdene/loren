@@ -4,6 +4,35 @@
 
 header {
 
+  .sticky-header {
+    height: 200px; // the body also has a top padding matching this height
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 2;
+
+    &.nav-up {
+      top: -200px;
+      .header-logo {
+        transition: all 0.2s ease-in-out;
+        height: 80px;
+        opacity: 0;
+      }
+    }
+
+    &.nav-down {
+      .header-logo {
+        transition: all 0.2s ease-in-out;
+        height: 120px;
+        background-color: rgba(89,121,81,1);
+      }
+      &.hide-nav {
+        top: -200px;
+      }
+    }
+  }
+
   .header-navigation {
     height: 50px;
     background-color: $white;
@@ -67,11 +96,15 @@ header {
   }
 
   .header-logo {
+    transition: all 0.2s ease-in-out;
     border-top: 6px solid $secondary-color;
     text-align: center;
-    background-color: rgba(89,121,81,.5);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: rgba(89,121,81,.65);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
   }
 
   .hero-main {

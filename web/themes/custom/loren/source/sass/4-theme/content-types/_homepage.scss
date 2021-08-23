@@ -6,4 +6,6 @@
 
 // For this site, the entire site is a single node and the class we are referencing
 // is on the <body> element. Thus, the class name is slightly different.
-.node-type-homepage {}
+.node-type-homepage {
+  padding-top: 200px;
+}
