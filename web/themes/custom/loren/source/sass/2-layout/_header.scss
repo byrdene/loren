@@ -27,9 +27,8 @@ header {
 
     // specific to elements in the container
     .menu--page-links {
-      position: absolute;
-      top: 13px; // visually align with contact header
-      right: 10px;
+      text-align: center;
+      padding-top: 10px;
       .menu {
         li {
           & + li {
@@ -44,10 +43,7 @@ header {
       }
     }
     .contact-header {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      display: flex;
+      display: none;
       align-items: center;
       .menu--social-media,
       .contact-header-phone {
@@ -62,6 +58,21 @@ header {
       }
       .contact-header-phone {
         margin-left: .25em;
+      }
+    }
+
+    @include bp(small, up) {
+      .menu--page-links {
+        position: absolute;
+        top: 13px; // visually align with contact header
+        right: 10px;
+        padding-top: 0;
+      }
+      .contact-header {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
       }
     }
 
