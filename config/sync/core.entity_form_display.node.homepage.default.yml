@@ -99,7 +99,6 @@ third_party_settings:
       label: 'About Loren Rosenzweig'
     group_resources:
       children:
-        - field_intro_text_resources
         - field_forms
         - field_articles
         - field_resource_links
@@ -241,13 +240,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_background_image:
-    type: media_library_widget
-    weight: 10
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
   field_biography:
     weight: 8
     settings:
@@ -324,17 +316,6 @@ content:
     region: content
   field_intro_text_pa:
     weight: 26
-    settings:
-      rows: 3
-      placeholder: ''
-    third_party_settings:
-      allowed_formats:
-        hide_help: '1'
-        hide_guidelines: '1'
-    type: text_textarea
-    region: content
-  field_intro_text_resources:
-    weight: 20
     settings:
       rows: 3
       placeholder: ''
@@ -467,8 +448,10 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_background_image: true
   field_contact_form: true
   field_intro_text_contact: true
+  field_intro_text_resources: true
   moderation_state: true
   path: true
   promote: true

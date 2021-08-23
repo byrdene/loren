@@ -2,36 +2,8 @@
 //   SITE HEADER
 // ==========================================================================
 
+
 header {
-
-  .sticky-header {
-    height: 200px; // the body also has a top padding matching this height
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-    z-index: 2;
-
-    &.nav-up {
-      top: -200px;
-      .header-logo {
-        transition: all 0.2s ease-in-out;
-        height: 80px;
-        opacity: 0;
-      }
-    }
-
-    &.nav-down {
-      .header-logo {
-        transition: all 0.2s ease-in-out;
-        height: 120px;
-        background-color: rgba(89,121,81,1);
-      }
-      &.hide-nav {
-        top: -200px;
-      }
-    }
-  }
 
   .header-navigation {
     height: 50px;
@@ -244,6 +216,37 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+body:not(.user-logged-in) {
+  .sticky-header {
+    height: 200px; // the body also has a top padding matching this height
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 2;
+
+    &.nav-up {
+      top: -200px;
+      .header-logo {
+        transition: all 0.2s ease-in-out;
+        height: 80px;
+        opacity: 0;
+      }
+    }
+
+    &.nav-down {
+      .header-logo {
+        transition: all 0.2s ease-in-out;
+        height: 120px;
+        background-color: rgba(89,121,81,1);
+      }
+      &.hide-nav {
+        top: -200px;
       }
     }
   }
