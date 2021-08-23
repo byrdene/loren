@@ -52,7 +52,6 @@ third_party_settings:
       children:
         - field_summary_items
         - field_location_statement
-        - field_background_image
       parent_name: ''
       weight: 1
       format_type: details
@@ -128,7 +127,7 @@ third_party_settings:
         - field_twitter
         - field_linkedin
       parent_name: ''
-      weight: 10
+      weight: 8
       format_type: details
       region: content
       format_settings:
@@ -179,7 +178,7 @@ third_party_settings:
         - field_attribution_3
         - field_callout_image_3
       parent_name: ''
-      weight: 9
+      weight: 7
       format_type: details
       region: content
       format_settings:
@@ -244,11 +243,11 @@ content:
     region: content
   field_background_image:
     type: media_library_widget
-    weight: 4
+    weight: 10
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_biography:
     weight: 8
     settings:
@@ -362,7 +361,7 @@ content:
     type: string_textfield
     region: content
   field_metatags:
-    weight: 11
+    weight: 9
     settings:
       sidebar: true
     third_party_settings: {  }
