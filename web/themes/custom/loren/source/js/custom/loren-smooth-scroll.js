@@ -13,7 +13,7 @@
         event.preventDefault();
 
         $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
+          scrollTop: $($.attr(this, 'href')).offset().top + 40
         }, 750);
 
         // hide sticky header but do it after the sticky header functions run
