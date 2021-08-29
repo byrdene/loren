@@ -183,19 +183,22 @@
       }
     }
     .callout-image {
-      float: right;
-      width: 30%;
-      padding-left: $gutter/2;
+      margin-left: -20px;
+      margin-bottom: 40px;
       > .field {
         border: 2px solid $white;
         border-radius: 2px;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
       }
-      & + .callout-text {
-        width: 70%;
-      }
       @include bp(small, up) {
+        float: right;
+        width: 30%;
         padding-left: $gutter*2;
+        margin-left: 0;
+        margin-bottom: 0;
+        & + .callout-text {
+          width: 70%;
+        }
       }
     }
   }

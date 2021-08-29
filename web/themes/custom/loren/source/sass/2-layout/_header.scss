@@ -8,6 +8,8 @@ header {
   .header-navigation {
     height: 50px;
     background-color: $white;
+    display: flex;
+    align-items: center;
 
     // apply to everything in this container
     .menu {
@@ -28,7 +30,6 @@ header {
     // specific to elements in the container
     .menu--page-links {
       text-align: center;
-      padding-top: 10px;
       .menu {
         li {
           & + li {
@@ -62,6 +63,7 @@ header {
     }
 
     @include bp(nav, up) {
+      display: block; // unset flex
       .menu--page-links {
         position: absolute;
         top: 13px; // visually align with contact header
