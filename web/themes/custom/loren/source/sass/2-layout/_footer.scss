@@ -6,4 +6,12 @@ footer {
   padding: $gutter*2 0;
   color: $white;
   text-align: center;
+  a {
+    color: $white !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
 }

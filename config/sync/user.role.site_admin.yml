@@ -16,7 +16,7 @@ permissions:
   - 'access toolbar'
   - 'create document media'
   - 'create image media'
+  - 'edit any homepage content'
   - 'edit own document media'
   - 'edit own image media'
-  - 'view any webform submission'
   - 'view the administration theme'

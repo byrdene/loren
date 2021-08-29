@@ -32,7 +32,7 @@
 
 
   <div class="container full-width padded-row header-logo">
-      <img src="{{ base_path ~ directory }}/logo.png" alt="{{ 'Home'|t }}"/>
+    <a href="/"><img src="{{ base_path ~ directory }}/logo.png" alt="{{ 'Home'|t }}"/></a>
   </div>
 
   </div>
@@ -220,6 +220,15 @@
 <!-- FOOTER -->
 <footer class="container full-width bg-primary">
   <div class="container page-width padded-row">
-    <p>All rights reserved, Loren C. Rosenzweig. Copyright &#169; {{ "now"|date('Y') }}.</p>
+    <p>All rights reserved, Loren C. Rosenzweig. Copyright &#169; {{ "now"|date('Y') }} |
+
+      {% if logged_in %}
+        <a href="/user/logout">Logout</a>
+      {% else %}
+        <a href="/user">Login</a>
+      {% endif %}
+
+
+    </p>
   </div><!-- /.container -->
 </footer>

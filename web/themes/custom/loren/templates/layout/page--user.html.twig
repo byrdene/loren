@@ -1,0 +1,38 @@
+
+<!-- HEADER -->
+<header class="non-node">
+  <div>
+
+    <div class="container full-width padded-row header-logo">
+      <a href="/"><img src="{{ base_path ~ directory }}/logo.png" alt="{{ 'Home'|t }}"/></a>
+    </div>
+
+  </div>
+
+
+</header>
+
+<div{{ attributes.addClass(
+  'layout-container'
+) }}>
+
+  <!-- MAIN PAGE CONTENT -->
+  <main id="main-content" tabindex="-1">
+
+
+    <!-- PRIMARY-CONTENT -->
+    <div id="primary-content">
+      <div class="container small-width padded-row">
+
+        <div id="content">
+
+          {{ page.content }}
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+</div><!-- /.layout-container -->
+

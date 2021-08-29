@@ -61,7 +61,7 @@ header {
       }
     }
 
-    @include bp(small, up) {
+    @include bp(nav, up) {
       .menu--page-links {
         position: absolute;
         top: 13px; // visually align with contact header
@@ -202,9 +202,7 @@ header {
         opacity: .1;
       }
     }
-
   }
-
   .hero-footer {
     .container {
       text-align: center;
@@ -230,6 +228,24 @@ header {
           }
         }
       }
+    }
+  }
+
+  // styles for smartphones and touchscreens
+  @media (hover: none) and (pointer: coarse) {
+    .header-logo {
+      background-color: rgba(89,121,81,1);
+    }
+    .hero-main {
+      .hero-main-wrapper {
+        padding-top: 20px;
+      }
+    }
+    .hero-background {
+      position: absolute;
+      top: -20px;
+      height: auto;
+      padding-bottom: $gutter*2;
     }
   }
 }
@@ -261,6 +277,38 @@ body:not(.user-logged-in) {
       &.hide-nav {
         top: -200px;
       }
+    }
+  }
+}
+
+body.user-logged-in,
+body.path-user {
+  .non-node {
+    .header-logo {
+      height: 120px;
+      background-color: rgba(89,121,81,1);
+    }
+  }
+  @include bp(small, up) {
+    footer {
+      padding-bottom: $gutter*4;
+    }
+  }
+}
+
+body.path-user {
+  #primary-content {
+    margin-top: $gutter*2;
+    h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: $primary-color;
+    }
+    .user-login-form {
+      margin-top: $gutter;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

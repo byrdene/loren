@@ -293,7 +293,7 @@ final class Versions
   'symfony/lock' => 'v4.4.27@6ca476d4ac992802f2a4043929f68f1818449486',
   'symfony/phpunit-bridge' => 'v5.3.4@bc368b765a651424b19f5759953ce2873e7d448b',
   'theseer/tokenizer' => '1.2.1@34a41e998c2183e22995f158c581e7b5e755ab9e',
-  'drupal/recommended-project' => 'dev-master@061bd449aced07c00a6c9a533030d2c059a08434',
+  'drupal/recommended-project' => 'dev-master@9ba75a8979c6db2f18353d2b95fed9cc5bf44afc',
 );
 
     private function __construct()
