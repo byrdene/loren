@@ -231,22 +231,12 @@ header {
     }
   }
 
-  // styles for smartphones and touchscreens
-  @media (hover: none) and (pointer: coarse) {
-    .header-logo {
-      background-color: rgba(89,121,81,1);
-    }
-    .hero-main {
-      .hero-main-wrapper {
-        padding-top: 20px;
-      }
-    }
-    .hero-background {
-      position: absolute;
-      top: -20px;
-      height: auto;
-      padding-bottom: $gutter*2;
-    }
+}
+
+body.node-type-homepage {
+  overflow-x: hidden;
+  &:not(.user-logged-in) {
+    padding-top: 200px;
   }
 }
 
@@ -309,6 +299,34 @@ body.path-user {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+  }
+}
+
+
+// styles for smartphones and touchscreens
+//@include bp(medium, down) { // for testing purposes
+@media (hover: none) and (pointer: coarse) {
+  body.node-type-homepage {
+    &:not(.user-logged-in) {
+      padding-top: 170px;
+    }
+  }
+  header {
+    .header-logo {
+      height: 120px;
+      background-color: rgba(89,121,81,1);
+    }
+    .hero-main {
+      .hero-main-wrapper {
+        padding-top: 20px;
+      }
+    }
+    .hero-background {
+      position: absolute;
+      top: -20px;
+      height: auto;
+      padding-bottom: $gutter*2;
     }
   }
 }
