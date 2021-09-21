@@ -108,7 +108,11 @@ header {
         .tagline-wrapper {
           margin: 0 auto;
           padding-bottom: $gutter;
+          img {
+            display: none;
+          }
           h2 {
+            font-family: $chancery;
             @include font-size(28px);
             color: $primary-color;
             text-shadow: 3px 3px 8px rgba(255, 255, 255, .5);
@@ -148,8 +152,11 @@ header {
           .tagline-wrapper {
             margin-top: 30px;
             margin-left: -75px;
+            img {
+              display: inline-block;
+            }
             h2 {
-              font-family: $chancery;
+              display: none;
               @include font-size(32px);
               color: $white;
               text-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
