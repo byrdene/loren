@@ -83,8 +83,7 @@ class SmartDateDailyRangeFormatter extends SmartDateDefaultFormatter {
       $dateAugmenterManager = \Drupal::service('plugin.manager.dateaugmenter');
       // TODO: Support custom entities.
       $config = $this->getThirdPartySettings('date_augmenter');
-      $active_augmenters = $config['status'] ?? [];
-      $augmenters = $dateAugmenterManager->getActivePlugins($active_augmenters);
+      $augmenters = $dateAugmenterManager->getActivePlugins($config);
       $entity = $items->getEntity();
     }
 

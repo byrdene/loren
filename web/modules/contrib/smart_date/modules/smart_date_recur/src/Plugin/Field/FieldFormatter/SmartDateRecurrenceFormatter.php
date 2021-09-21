@@ -170,10 +170,8 @@ class SmartDateRecurrenceFormatter extends SmartDateDefaultFormatter {
       // TODO: Support custom entities.
       $config = $this->getThirdPartySettings('date_augmenter');
       $this->sharedSettings = $config;
-      $active_instance_augmenters = $config['instances']['status'] ?? [];
-      $active_rule_augmenters = $config['rule']['status'] ?? [];
-      $instance_augmenters = $dateAugmenterManager->getActivePlugins($active_instance_augmenters);
-      $rule_augmenters = $dateAugmenterManager->getActivePlugins($active_rule_augmenters);
+      $instance_augmenters = $dateAugmenterManager->getActivePlugins($config['instances']);
+      $rule_augmenters = $dateAugmenterManager->getActivePlugins($config['rule']);
       $this->entity = $items->getEntity();
     }
 

@@ -275,21 +275,21 @@ class SmartDateWidgetBase extends DateTimeWidgetBase {
       if (!empty($item['timezone'])) {
         $timezone = new \DateTimezone($item['timezone']);
       }
-      else {
-        $value_tz = $item['value']->getTimezone();
-        $value_tz_name = $value_tz->getName();
-        if (SmartDateTrait::isAllDay(
-          $item['value']->getTimestamp(),
-          $item['end_value']->getTimestamp(),
-          $value_tz_name,
-        ) && $value_tz_name != $site_tz_name) {
-          // Make sure all day events explicitly save timezone if different from
-          // the site.
-          $timezone = $value_tz;
-          $item['timezone'] = $value_tz_name;
-        }
-      }
       if (!empty($item['value']) && $item['value'] instanceof DrupalDateTime) {
+        if (!$timezone) {
+          $value_tz = $item['value']->getTimezone();
+          $value_tz_name = $value_tz->getName();
+          if (SmartDateTrait::isAllDay(
+            $item['value']->getTimestamp(),
+            $item['end_value']->getTimestamp(),
+            $value_tz_name
+          ) && $value_tz_name != $site_tz_name) {
+            // Make sure all day events explicitly save timezone if different
+            // from the site.
+            $timezone = $value_tz;
+            $item['timezone'] = $value_tz_name;
+          }
+        }
         // Adjust the date for storage.
         $item['value'] = $this->smartGetTimestamp($item['value'], $timezone);
       }
