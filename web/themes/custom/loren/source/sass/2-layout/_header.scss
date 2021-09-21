@@ -107,7 +107,6 @@ header {
       .hero-text {
         .tagline-wrapper {
           margin: 0 auto;
-          padding-bottom: $gutter;
           img {
             display: none;
           }
@@ -152,6 +151,7 @@ header {
           .tagline-wrapper {
             margin-top: 30px;
             margin-left: -75px;
+            padding-bottom: $gutter;
             img {
               display: inline-block;
             }
