@@ -25,9 +25,17 @@
         $fontWeight: normal,
         $fontStyle: normal );
 
+@font-face {
+  font-family: 'Apple Chancery';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Apple Chancery'), url('../../static/fonts/apple-chancery/Apple Chancery.woff') format('woff');
+}
+
 // Typekit & Google fonts are loaded as libraries. Icon fonts are embedded above.
 $roboto:   "Roboto", sans-serif;
 $icomoon:   "ICO Moon", sans-serif;
+$chancery: "Apple Chancery", serif;
 
 // Font weight
 $font-weights: (

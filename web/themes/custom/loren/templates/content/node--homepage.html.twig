@@ -42,8 +42,8 @@
       <div class="hero-collage"><img src="{{ base_path ~ directory }}/static/images/photo-collage.png" alt=""/></div>
       <div class="hero-text">
         <div class="tagline-wrapper">
-{#        <h2>Preserving Your Legacy</h2>#}
-        <img src="{{ base_path ~ directory }}/static/images/tagline2.png" alt=""/>
+        <h2>Preserving Your Legacy</h2>
+{#        <img src="{{ base_path ~ directory }}/static/images/tagline2.png" alt=""/>#}
         </div>
         <div class="hero-summary">{{ content.field_summary_items }}</div>
       </div>
@@ -79,7 +79,9 @@
 
         <section class="container full-width practice-areas white" id="practice">
           <div class="container small-width padded-row intro-wrapper">
-            <h2 class="h1 section-heading">Practice Areas</h2>
+            <div class="section-heading">
+              <h2 class="h1">Practice Areas</h2>
+            </div>
             {{ content.field_intro_text_pa }}
           </div>
 
@@ -110,7 +112,7 @@
 
         <section class="container full-width about white" id="about">
           <div class="container page-width padded-row about-wrapper">
-          <div class="container small-width padded-row"><h2 class="h1 section-heading">About Loren Rosenzweig</h2></div>
+          <div class="container small-width padded-row"><div class="section-heading"><h2 class="h1">About Loren Rosenzweig</h2></div></div>
             <div class="about-photo" data-aos="fade-right">{{ content.field_headshot }}</div>
             <div class="about-bio rte" data-aos="fade-up">{{ content.field_biography }}</div>
           </div>
@@ -137,7 +139,7 @@
 
         <section class="container resources white" id="resources">
           <div class="container small-width padded-row resources-wrapper">
-          <div class="container small-width padded-row"><h2 class="h1 section-heading">Resources</h2></div>
+            <div class="container small-width padded-row"><div class="section-heading"><h2 class="h1">Resources</h2></div></div>
             {% if content.field_forms|render %}
               <div class="resource-section resources-forms" data-aos="fade-up">
                 <h3>Forms</h3>
@@ -180,7 +182,7 @@
 
         <section class="container contact white-faded" id="contact">
           <div class="container medium-width padded-row contact-wrapper">
-          <div class="container small-width padded-row"><h2 class="h1 section-heading">Contact</h2></div>
+            <div class="container small-width padded-row"><div class="section-heading"><h2 class="h1">Contact</h2></div></div>
 
           <div class="container small-width padded-row contact-text" data-aos="zoom-out-up">
             <p>Loren C. Rosenzweig<br>
