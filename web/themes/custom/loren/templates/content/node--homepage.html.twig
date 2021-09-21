@@ -41,7 +41,10 @@
     <div class="container page-width padded-row hero-main-wrapper">
       <div class="hero-collage"><img src="{{ base_path ~ directory }}/static/images/photo-collage.png" alt=""/></div>
       <div class="hero-text">
-        <h2>Preserving Your Legacy</h2>
+        <div class="tagline-wrapper">
+{#        <h2>Preserving Your Legacy</h2>#}
+        <img src="{{ base_path ~ directory }}/static/images/tagline.png" alt=""/>
+        </div>
         <div class="hero-summary">{{ content.field_summary_items }}</div>
       </div>
     </div>
@@ -49,7 +52,7 @@
 
   <div class="hero-background">
     <div class="hero-gradient"></div>
-    <img src="{{ base_path ~ directory }}/static/images/old-family-photo.jpg" alt="">
+    <img src="{{ base_path ~ directory }}/static/images/tree-photo.jpg" alt="">
   </div>
 
 
