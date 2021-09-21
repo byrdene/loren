@@ -30,13 +30,12 @@
   font-style: normal;
   font-weight: normal;
   src: url('../../static/fonts/apple-chancery/apple-chancery.woff') format('woff');
-  font-display: swap;
 }
 
 // Typekit & Google fonts are loaded as libraries. Icon fonts are embedded above.
 $roboto:   "Roboto", sans-serif;
 $icomoon:   "ICO Moon", sans-serif;
-$chancery: "Chancery", "Roboto", sans-serif;
+$chancery: "Chancery", sans-serif;
 
 // Font weight
 $font-weights: (
