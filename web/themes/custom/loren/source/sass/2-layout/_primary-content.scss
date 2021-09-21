@@ -9,7 +9,7 @@
       text-align: center;
       margin-bottom: $gutter*2;
       h2 {
-        @include font-weight(medium);
+        //@include font-weight(medium);
         font-family: $chancery;
         line-height: 1.2em;
         padding-bottom: 0;
