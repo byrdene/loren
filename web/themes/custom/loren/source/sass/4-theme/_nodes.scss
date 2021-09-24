@@ -5,6 +5,34 @@
 //   3. Import the partials for individual content types
 // ==========================================================================
 
+// node preview container
+
+.node-preview-container {
+  position: fixed;
+  z-index: 499;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  bottom: 0;
+  background: white;
+  border-top: 4px solid black;
+  a.node-preview-backlink {
+    background-color: #0550e6;
+    border: 1px solid #0550e6;
+    &:hover {
+      color: #0550e6 !important;
+      background-color: $white;
+    }
+  }
+  .node-preview-form-select {
+    text-align: center;
+    margin: $gutter/4;
+  }
+  .form-item-view-mode {
+    display: none;
+  }
+}
+
 
 //  1. All nodes, regardless off view mode
 //  ==========================================================================

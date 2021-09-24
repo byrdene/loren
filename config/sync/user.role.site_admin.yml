@@ -13,7 +13,6 @@ permissions:
   - 'access content overview'
   - 'access files overview'
   - 'access media overview'
-  - 'access toolbar'
   - 'create document media'
   - 'create image media'
   - 'edit any homepage content'
