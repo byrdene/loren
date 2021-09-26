@@ -252,10 +252,25 @@
   .contact {
     padding-bottom: $gutter*3;
     a {
+      color: $black;
       text-decoration: none;
     }
     .contact-text {
       font-size: 1.25em;
+    }
+    .button.black-button {
+      color: $white !important;
+      background-color: $black;
+      border: 0 !important;
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+    a.map-link {
+      text-decoration: underline;
+      &:hover {
+        color: $action-color;
+      }
     }
   }
 }

@@ -5,7 +5,6 @@
 footer {
   padding: $gutter*2 0;
   color: $white;
-  text-align: center;
   a {
     color: $white !important;
     font-weight: normal !important;
@@ -13,5 +12,11 @@ footer {
     &:hover {
       text-decoration: underline !important;
     }
+  }
+  .centered {
+    text-align: center;
+  }
+  .small-text {
+    font-size: .8em;
   }
 }

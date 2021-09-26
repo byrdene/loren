@@ -11,20 +11,21 @@
     <div class="container page-width header-navigation-wrapper">
     <nav class="menu--page-links">
       <ul class="menu">
-        <li class="menu-item"><a href="#practice">Practice Areas</a></li>
         <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#practice">Practice Areas</a></li>
         <li class="menu-item"><a href="#resources">Resources</a></li>
         <li class="menu-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="contact-header">
-      <nav class="menu--social-media">
-        <ul class="menu">
-          <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>
-          <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>
-          <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>
-        </ul>
-      </nav>
+{#      <nav class="menu--social-media">#}
+{#        <ul class="menu">#}
+{#          <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>#}
+{#          <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>#}
+{#          <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>#}
+{#        </ul>#}
+{#      </nav>#}
+      <div><a class="button black-button-small" href="{{ content.field_email[0]['#url']}}">Email Loren</a></div>
       <div class="contact-header-phone">{{ content.field_phone }}</div>
     </div>
     </div>
@@ -77,19 +78,13 @@
 
       <div id="content">
 
-        <section class="container full-width practice-areas white" id="practice">
-          <div class="container small-width padded-row intro-wrapper">
-            <div class="section-heading">
-              <h2 class="h1">Practice Areas</h2>
-            </div>
-            {{ content.field_intro_text_pa }}
+        <section class="container full-width about white" id="about">
+          <div class="container page-width padded-row about-wrapper">
+            <div class="container small-width padded-row"><div class="section-heading"><h2 class="h1">About Loren Rosenzweig</h2></div></div>
+            <div class="about-photo" data-aos="fade-right">{{ content.field_headshot }}</div>
+            <div class="about-bio rte" data-aos="fade-up">{{ content.field_biography }}</div>
           </div>
 
-          <div class="container page-width padded-row practice-area-grid">{{ content.field_practice_areas }}</div>
-
-          <div class="container small-width padded-row outro-wrapper">
-          {{ content.field_outro_text_pa }}
-          </div>
         </section>
 
         <section id="callout1" class="container full-width callout white">
@@ -110,13 +105,19 @@
           </div>
         </section>
 
-        <section class="container full-width about white" id="about">
-          <div class="container page-width padded-row about-wrapper">
-          <div class="container small-width padded-row"><div class="section-heading"><h2 class="h1">About Loren Rosenzweig</h2></div></div>
-            <div class="about-photo" data-aos="fade-right">{{ content.field_headshot }}</div>
-            <div class="about-bio rte" data-aos="fade-up">{{ content.field_biography }}</div>
+        <section class="container full-width practice-areas white" id="practice">
+          <div class="container small-width padded-row intro-wrapper">
+            <div class="section-heading">
+              <h2 class="h1">Practice Areas</h2>
+            </div>
+            {{ content.field_intro_text_pa }}
           </div>
 
+          <div class="container page-width padded-row practice-area-grid">{{ content.field_practice_areas }}</div>
+
+          <div class="container small-width padded-row outro-wrapper">
+            {{ content.field_outro_text_pa }}
+          </div>
         </section>
 
         <section id="callout2" class="container full-width callout white">
@@ -193,19 +194,21 @@
             <p>
               <strong>(T):</strong> {{ content.field_phone }}<br>
               <strong>(F):</strong> {{ content.field_fax }}<br>
-              <strong>(E):</strong> {{ content.field_email }}
+{#              <strong>(E):</strong> {{ content.field_email }}#}
             </p>
 
-            <nav class="menu--social-media">
-              <ul class="menu">
-                <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>
-                <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>
-                <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>
-              </ul>
-            </nav>
+            <p><a class="button black-button" href="{{ content.field_email[0]['#url']}}">Email Loren</a></p>
+
+{#            <nav class="menu--social-media">#}
+{#              <ul class="menu">#}
+{#                <li class="menu-item"><a href="{{ content.field_facebook[0]['#url']}}" class="facebook">Facebook</a></li>#}
+{#                <li class="menu-item"><a href="{{ content.field_linkedin[0]['#url']}}" class="linkedin">LinkedIn</a></li>#}
+{#                <li class="menu-item"><a href="{{ content.field_twitter[0]['#url']}}" class="twitter">Twitter</a></li>#}
+{#              </ul>#}
+{#            </nav>#}
 
             <h3>Directions to the Office</h3>
-            <a href="{{ content.field_google_map[0]['#url'] }}">See Google Maps</a>
+            <a class="map-link" href="{{ content.field_google_map[0]['#url'] }}">Google Maps</a>
 
           </div>
 
@@ -224,8 +227,8 @@
 
 <!-- FOOTER -->
 <footer class="container full-width bg-primary">
-  <div class="container page-width padded-row">
-    <p>All rights reserved, Loren C. Rosenzweig. Copyright &#169; {{ "now"|date('Y') }} |
+  <div>
+    <p class="container centered page-width padded-row">All rights reserved, Loren C. Rosenzweig. Copyright &#169; {{ "now"|date('Y') }} |
 
       {% if logged_in %}
         <a href="/user/logout">Logout</a>
@@ -235,5 +238,6 @@
 
 
     </p>
+    <p class="container small-text small-width padded-row">The information provided in this website is offered for informational purposes only; it does not constitute legal advice or an offering to create an attorney-client relationship. Please do not send us detailed or confidential information without first contacting us directly. This website may be considered advertising under the Massachusetts Rules of Professional Conduct.</p>
   </div><!-- /.container -->
 </footer>

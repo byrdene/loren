@@ -69,7 +69,7 @@ third_party_settings:
         - field_practice_areas
         - field_outro_text_pa
       parent_name: ''
-      weight: 2
+      weight: 4
       format_type: details
       region: content
       format_settings:
@@ -85,7 +85,7 @@ third_party_settings:
         - field_biography
         - field_headshot
       parent_name: ''
-      weight: 4
+      weight: 2
       format_type: details
       region: content
       format_settings:
@@ -98,7 +98,6 @@ third_party_settings:
       label: 'About Loren Rosenzweig'
     group_resources:
       children:
-        - field_forms
         - field_articles
         - field_resource_links
       parent_name: ''
@@ -121,9 +120,6 @@ third_party_settings:
         - field_address
         - field_address_2
         - field_google_map
-        - field_facebook
-        - field_twitter
-        - field_linkedin
       parent_name: ''
       weight: 8
       format_type: details
@@ -276,14 +272,6 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
-  field_facebook:
-    weight: 28
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   field_fax:
     weight: 22
     settings:
@@ -316,14 +304,6 @@ content:
         hide_help: '1'
         hide_guidelines: '1'
     type: text_textarea
-    region: content
-  field_linkedin:
-    weight: 30
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   field_location_statement:
     weight: 3
@@ -422,14 +402,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_twitter:
-    weight: 29
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   title:
     type: string_textfield
     weight: 0
@@ -442,8 +414,11 @@ hidden:
   created: true
   field_background_image: true
   field_contact_form: true
+  field_facebook: true
   field_intro_text_contact: true
   field_intro_text_resources: true
+  field_linkedin: true
+  field_twitter: true
   moderation_state: true
   path: true
   promote: true
