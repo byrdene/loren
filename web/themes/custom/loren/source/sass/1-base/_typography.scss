@@ -33,7 +33,7 @@ p {
 
 a[href] {
   color: $link-color;
-  @include font-weight(semibold);
+  @include font-weight(medium);
   text-decoration: underline;
 
   &:hover,

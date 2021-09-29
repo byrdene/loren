@@ -188,8 +188,9 @@
         color: inherit;
       }
       .attribution {
-        text-transform: capitalize;
-        @include font-size(18px);
+        text-transform: uppercase;
+        @include font-size(16px);
+        @include font-weight(semibold);
         margin-top: $gutter;
         margin-left: $gutter;
         position: relative;
