@@ -5,30 +5,22 @@
 blockquote {
   @include font-size(30px);
   position: relative;
-  line-height: 38px;
-  @include font-weight(bold);
-  border-top: 1px solid $base-border-color;
-  border-bottom: 1px solid $base-border-color;
   margin: rem($vertical-spacing * 2) 0;
-  padding: $gutter $gutter*2;
+  @include font-size(24px);
+  line-height: 30px;
+  @include font-weight(medium);
+  padding-left: $gutter*3.5;
+  padding-right: $gutter*2.5;
+  color: $primary-color;
+
   &:before {
     display: block;
     position: absolute;
-    left: -.25em;
-    top: .4em;
-    font-family: $icomoon;
-    font-size: 1.5em;
-    content: $icon-quotes-left;
-  }
-  p:not(.citation) {
-      &:after {
-        display: inline-block;
-        position: absolute;
-        margin-top: -.1em;
-        margin-left: .1em;
-        font-family: $icomoon;
-        font-size: 1.5em;
-        content: $icon-quotes-right;
-      }
+    left: 0;
+    top: .25em;
+    font-size: 6.5em;
+    font-family: Georgia, serif;
+    content: "\201C";
+    color: inherit;
   }
 }

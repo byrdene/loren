@@ -169,19 +169,23 @@
 
   .callout {
     .callout-text {
+      overflow-x: hidden;
       @include font-size(24px);
       position: relative;
       line-height: 30px;
-      @include font-weight(bold);
-      padding-left: $gutter*2;
+      @include font-weight(normal);
+      padding-left: $gutter*3.5;
+      padding-right: $gutter*2.5;
+      color: $white;
       &:before {
         display: block;
         position: absolute;
-        left: -.5em;
-        top: -.15em;
-        font-family: $icomoon;
-        font-size: 3.5em;
-        content: $icon-quotes-left;
+        left: 0;
+        top: .25em;
+        font-size: 6.5em;
+        font-family: Georgia, serif;
+        content: "\201C";
+        color: inherit;
       }
       .attribution {
         text-transform: capitalize;
