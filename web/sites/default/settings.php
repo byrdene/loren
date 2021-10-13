@@ -786,10 +786,23 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+// db creds when at zaldomoh/loren dev site
+//$databases['default']['default'] = array (
+//  'database' => 'zaldomoh_loren',
+//  'username' => 'zaldomoh_loren',
+//  'password' => 'B9c(pHTH_ZY1',
+//  'prefix' => '',
+//  'host' => 'localhost',
+//  'port' => '3306',
+//  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+//  'driver' => 'mysql',
+//);
+
+// db creds at live site
 $databases['default']['default'] = array (
-  'database' => 'zaldomoh_loren',
-  'username' => 'zaldomoh_loren',
-  'password' => 'B9c(pHTH_ZY1',
+  'database' => 'trustsan_drupal',
+  'username' => 'trustsan_drupal',
+  'password' => '1?6E3d,~Y=^.',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
